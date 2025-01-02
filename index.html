@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puja Patel Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="particles/particles.min.js"></script>
+    <script src="particles/particles.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">Puja | Patel</div>
+      <div class="hamburger">&#9776;</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div id="particles-js"></div>
+      <div class="content">
+        <div class="left">
+          <div class="css-typing">
+            <p class="welcome">Hey there, Welcome to my Portfolio.</p>
+            <p class="name">I'm <strong>Puja Patel</strong>.</p>
+            <p class="desc">
+              I am a Software Engineer, passionate about building intuitive
+              applications!
+            </p>
+          </div>
+          <div class="home-buttons">
+            <button onclick="window.open('https://meet.google.com', '_blank')">
+              Let's Chat
+            </button>
+            <button
+              onclick="document.getElementById('resume').scrollIntoView()"
+            >
+              View Resume
+            </button>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./images/logo.png" alt="Puja Patel Logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="content">
+        <img src="./images/about.png" alt="About Image" />
+        <p>
+          I'm <strong>Puja Patel</strong>! I’m a full-time
+          <strong> Software Engineer</strong> with an undergraduate degree in SE
+          with coop. <br /><br />I have background in product management,
+          through co-op and Full Stack dev through building web apps using
+          <strong>PERN </strong>and <strong>MERN </strong>stacks<br /><br />
+          I’m all about clean, intuitive UI/UX design (dark mode, of
+          course!).<br /><br />
+          Right now, I’m diving into cloud computing and working toward my
+          <strong>AWS Cloud Practitioner certificate</strong>.<br /><br />
+          When I'm not coding, you can find me hiking, hanging out with my dog,
+          or playing PC games and hitting up arcade bars!<br />
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="content">
+              <h3>Junior Software Engineer</h3>
+              <p><strong>Cashly, Oakville, ON</strong></p>
+              <p>PERN Stack, Jira, SDLC, Full stack development, React.js</p>
+            </div>
+            <div class="time">
+              <h4>May 2024</h4>
+            </div>
+          </li>
+
+          <li>
+            <div class="content">
+              <h3>Product Owner Intern - MobiControl Team</h3>
+              <p><strong>SOTI, Missisauga, ON</strong></p>
+              <p>
+                Agile methodologies, Jira, Security Vulnerability Management,
+                SDLC
+              </p>
+            </div>
+            <div class="time">
+              <h4>May 2021</h4>
+            </div>
+          </li>
+
+          <li>
+            <div class="content">
+              <h3>Enrolled at Western University</h3>
+              <p>Undergraduate degree in Software Engineering</p>
+            </div>
+            <div class="time">
+              <h4>Septeber 2019</h4>
+            </div>
+          </li>
+          <div style="clear: both"></div>
+        </ul>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <!-- Container for Cards -->
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="path-to-image1.jpg" alt="Project 1" />
+          </div>
+          <div class="card-description">
+            <p>Description of Project 1.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="path-to-image2.jpg" alt="Project 2" />
+          </div>
+          <div class="card-description">
+            <p>Description of Project 2.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="path-to-image3.jpg" alt="Project 3" />
+          </div>
+          <div class="card-description">
+            <p>Description of Project 3.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="path-to-image4.jpg" alt="Project 4" />
+          </div>
+          <div class="card-description">
+            <p>Description of Project 4.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/about.png" alt="Project 5" />
+          </div>
+          <div class="card-description">
+            <p>Description of Project 5.</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="path-to-image6.jpg" alt="Project 6" />
+          </div>
+          <div class="card-description">
+            <p>Description of Project 6.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>My Skills</h2>
+
+      <div class="tabs">
+        <button class="tablinks" onclick="openTab(event, 'frontend')">
+          Frontend
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'backend')">
+          Backend
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'cloud')">
+          Cloud
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'datascience')">
+          Data science
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'product')">
+          Product UI/UX
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'database')">
+          Database
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'other')">
+          Other
+        </button>
+        <div class="tabs-line"></div>
+      </div>
+
+      <!-- Tab Content -->
+      <!-- frontend -->
+      <div id="frontend" class="tabcontent">
+        <h3>Frameworks</h3>
+        <div class="skills-row">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/react.png" alt="React" />
+            </div>
+            <div class="skill-description">
+              <p>React</p>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/angular.png" alt="Angular" />
+            </div>
+            <div class="skill-description">
+              <p>Angular</p>
+            </div>
+          </div> 
+          
+        </div>
+        <h3>Languages</h3>
+        <div class="skills-row">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/html.png" alt="HTML" />
+            </div>
+            <div class="skill-description">
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/css.png" alt="CSS" />
+            </div>
+            <div class="skill-description">
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/js.png" alt="JavaScript" />
+            </div>
+            <div class="skill-description">
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- backend -->
+      <div id="backend" class="tabcontent">
+        <h3>Frameworks</h3>
+        <div class="skills-row">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/express.png" alt="Express" />
+            </div>
+            <div class="skill-description">
+              <p>Express.js</p>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/node.png" alt="Node" />
+            </div>
+            <div class="skill-description">
+              <p>Node.js</p>
+            </div>
+          </div> 
+          
+        </div>
+        <h3>Languages</h3>
+        <div class="skills-row">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/sql.png" alt="SQL" />
+            </div>
+            <div class="skill-description">
+              <p>SQL</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/python.png" alt="Python" />
+            </div>
+            <div class="skill-description">
+              <p>Python</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/js.png" alt="JavaScript" />
+            </div>
+            <div class="skill-description">
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cloud -->
+      <div id="cloud" class="tabcontent">
+        <h3>Amazon Web Services</h3>
+        <div class="skills-row">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/iam.png" alt="IAM" />
+            </div>
+            <div class="skill-description">
+              <p>IAM Roles</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/ec2.png" alt="EC2" />
+            </div>
+            <div class="skill-description">
+              <p>Elastic Cloud</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/s3.png" alt="S3" />
+            </div>
+            <div class="skill-description">
+              <p>S3</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/security.png" alt="Security" />
+            </div>
+            <div class="skill-description">
+              <p>Security</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- datascience -->
+      <div id="datascience" class="tabcontent">
+        <h3>Frameworks</h3>
+        <div class="skills-row">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/sklearn.png" alt="ScikitLearn" />
+            </div>
+            <div class="skill-description">
+              <p>Scikit learn</p>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/numpy.png" alt="Numpy" />
+            </div>
+            <div class="skill-description">
+              <p>Numpy</p>
+            </div>
+          </div> 
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/matplot.png" alt="Matplotlib" />
+            </div>
+            <div class="skill-description">
+              <p>Matplotlib</p>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/pandas.png" alt="Pandas" />
+            </div>
+            <div class="skill-description">
+              <p>Pandas</p>
+            </div>
+          </div> 
+          
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/seaborn.png" alt="Seaborn" />
+            </div>
+            <div class="skill-description">
+              <p>Seaborn</p>
+            </div>
+          </div>
+        </div>
+        <h3>Languages</h3>
+        <div class="skills-row">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/python.png" alt="Python" />
+            </div>
+            <div class="skill-description">
+              <p>Python</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- product management -->
+      <div id="product" class="tabcontent">
+        <div class="skills-row">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/jira.png" alt="Jira" />
+            </div>
+            <div class="skill-description">
+              <p>Jira</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/confluence.png" alt="Confluence" />
+            </div>
+            <div class="skill-description">
+              <p>Confluence</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/figma.png" alt="Figma" />
+            </div>
+            <div class="skill-description">
+              <p>Figma</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/salesforce.png" alt="Salesforce" />
+            </div>
+            <div class="skill-description">
+              <p>Salesforce</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- database -->
+       <div id="database" class="tabcontent">
+        <div class="skills-row">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/mysql.png" alt="mysql" />
+            </div>
+            <div class="skill-description">
+              <p>MySQL</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/mongo.png" alt="mongo" />
+            </div>
+            <div class="skill-description">
+              <p>MongoDB</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/postgres.png" alt="postgres" />
+            </div>
+            <div class="skill-description">
+              <p>Postgres</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- other -->
+      <div id="other" class="tabcontent">
+        <div class="skills-row">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/ssh.png" alt="ssh" />
+            </div>
+            <div class="skill-description">
+              <p>SSH</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/linux.png" alt="linux" />
+            </div>
+            <div class="skill-description">
+              <p>linux</p>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./images/skills/git.png" alt="Git" />
+            </div>
+            <div class="skill-description">
+              <p>Git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-me">
+      <div id="particles-contact"></div>
+      <h2>Contact Me</h2>
+      <div class="contact-form-container">
+        <form action="#" method="post" class="contact-form">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Your email address"
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            placeholder="Your message here"
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/ppate343/"
+          target="_blank"
+          class="icon linkedin"
+        >
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a
+          href="https://github.com/ppate343"
+          target="_blank"
+          class="icon github"
+        >
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="mailto:ppate2208@example.com" class="icon email">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+
+      <!-- No Copyright Tag -->
+      <footer class="footer">
+        <p>&copy;Puja Patel 2025</p>
+      </footer>
+    </section>
+    <script src="index.js"></script>
+    <script src="particles.js"></script>
+  </body>
+</html>
