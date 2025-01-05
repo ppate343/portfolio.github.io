@@ -28,16 +28,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elementsToAnimate.forEach(element => observer.observe(element));
 
-  const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector("nav ul");
+  // Navbar 
+  const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
 
-  // Ensure elements exist before adding event listeners
-  if (hamburger && navLinks) {
-    // Toggle the navigation menu on smaller screens
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  }
+// Toggle Navigation Menu on Hamburger Click
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Close Menu on Outside Click
+document.addEventListener('click', (event) => {
+    const isClickInsideNav = navLinks.contains(event.target);
+    const isClickOnHamburger = hamburger.contains(event.target);
+
+    if (!isClickInsideNav && !isClickOnHamburger) {
+        navLinks.classList.remove('active');  // Close the menu if clicked outside
+    }
+});
+
 
 
   const tabs = document.querySelectorAll(".tablinks");

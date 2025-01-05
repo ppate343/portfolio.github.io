@@ -73,27 +73,44 @@ nav ul li a:active {
     display: none;
     font-size: 24px;
     cursor: pointer;
+    color: hotpink;
+    z-index: 1100;
+    position: relative;
 }
 
+
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        top: 50px;
-        left: 0;
-        width: 200px;
-        background: black;
-        padding: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
     .hamburger {
         display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden by default */
+        height: 100vh;
+        width: 60%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.5s ease-in-out;
+        margin: 0; /* Removes default browser margin */
+        padding: 0; /* Removes default padding */
+        box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+    }
+
+    /* Active Class for Sliding Effect */
+    nav ul.active {
+        right: 0; /* Slide into view */
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
     }
 }
 
@@ -500,8 +517,8 @@ nav ul li a:active {
 /* Projects Section */
 
 #projects {
-    background-color: rgb(255, 188, 221);
-    color: white;
+    background-color: white;
+    color: hotpink;
     padding: 50px 20px;
     text-align: center;
 }
@@ -509,7 +526,7 @@ nav ul li a:active {
 #projects h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: black; 
+    color:hotpink; 
 }
 
 #projects .content {
@@ -522,21 +539,23 @@ nav ul li a:active {
 /*Project Cards */
 
 .card-container {
-    padding-top: 5%;
+    padding: 5%;
     display: grid;
-    /* Use grid for 2 rows of 3 items */
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    /* Auto-fit ensures cards wrap and minmax controls minimum card size */
     grid-gap: 20px;
-    /* Adds space between cards */
     justify-items: center;
-    /* Center cards in each column */
+    box-sizing: border-box; /* Prevents content overflow */
+    max-width: 100%; /* Prevents horizontal overflow */
+    overflow-x: hidden; /* Disables horizontal scrolling */
+    align-items: stretch;
+   
 }
 
 .card {
-    width: 380px;
-    /* Width of each card */
-    height: 380px;
+    width: 100%; /* Adjust to fit within the grid column */
+    max-width: 380px; /* Prevent cards from being too large */
+    height: 450px;
     /* Height of each card */
     background-color: rgb(249, 249, 249);
     /* Transparent white */
@@ -549,10 +568,11 @@ nav ul li a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .card:hover {
-    transform: rotate(5deg);
+    transform: scale(1.05);
     /* Slight rotation on hover */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     /* Shadow on hover */
@@ -561,7 +581,6 @@ nav ul li a:active {
 .card-image {
     width: 100%;
     height: 80%;
-    /* 60% of card height */
     padding: 2%;
     box-sizing: border-box;
 }
@@ -586,31 +605,34 @@ nav ul li a:active {
 }
 
 .card-description p {
-    margin: 0;
+    margin-top: 10%;
     font-size: 16px;
     text-align: center;
     line-height: 1.4;
 }
 
+
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .card-container {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 cards per row */
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
     }
 }
 
 @media (max-width: 480px) {
     .card-container {
-        grid-template-columns: 1fr;
-        /* 1 card per row */
+        grid-template-columns: 1fr; /* Stack cards vertically */
+    }
+    .card {
+        max-width: 100%; 
     }
 }
-
 
 /* Skills Section */
 
 #skills {
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     color: hotpink;
     padding: 50px 20px;
     text-align: center;
@@ -648,7 +670,7 @@ nav ul li a:active {
     /* Adjust font size */
     font-weight: normal;
     /* Normal font weight */
-    color: #333;
+    color: grey;
     /* Default text color */
     text-align: center;
     /* Center the text */
@@ -701,7 +723,7 @@ nav ul li a:active {
     width: 125px;
     height: 150px;
     margin: 10px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -768,7 +790,7 @@ nav ul li a:active {
 
 
 #contact-me {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     color: hotpink;
     padding: 50px 20px;
     text-align: center;
