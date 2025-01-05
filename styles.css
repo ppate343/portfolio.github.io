@@ -645,6 +645,7 @@ nav ul li a:active {
 
 
 /* Tabs Styling */
+/* Tabs Styling */
 .tabs {
     padding-top: 5%;
     display: flex;
@@ -652,48 +653,34 @@ nav ul li a:active {
     margin-bottom: 30px;
     overflow: hidden;
     position: relative;
+    flex-wrap: wrap;
 }
 
 /* Tab links (buttons) styling */
 .tablinks {
     background: none;
-    /* Remove background */
     border: none;
-    /* Remove border */
     outline: none;
-    /* Remove outline */
     cursor: pointer;
-    /* Pointer cursor on hover */
     padding: 0;
-    /* No padding */
     font-size: 17px;
-    /* Adjust font size */
     font-weight: normal;
-    /* Normal font weight */
     color: grey;
-    /* Default text color */
     text-align: center;
-    /* Center the text */
     transition: color 0.3s, transform 0.3s;
-    /* Smooth transitions */
     margin: 0 15px;
-    /* Add space between the tabs */
 }
 
 /* Hover effect for tab links */
 .tablinks:hover {
     color: hotpink;
-    /* Change text color to hotpink on hover */
     transform: scale(1.05);
-    /* Slightly enlarge the text */
 }
 
 /* Active tab link styling */
 .tablinks.active {
     color: hotpink;
-    /* Highlight active tab with hotpink */
     font-weight: bold;
-    /* Bold active tab text */
 }
 
 /* The line under the active tab */
@@ -703,12 +690,35 @@ nav ul li a:active {
     background-color: hotpink;
     bottom: 0;
     transition: left 0.2s ease, width 0.2s ease;
+    width: 0; /* Set initial width to 0 */
+    left: 0;  /* Set initial position to the left */
 }
 
-/* Optional: Style the tabs container on hover */
-.tabs:hover {
-    color: #ff007f;
+/* Make the tabs responsive */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .tablinks {
+        padding: 12px 20px;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .tabs-line {
+        width: 100%; /* Make line full width when tabs are stacked */
+        left: 0;
+    }
 }
+
+@media (max-width: 480px) {
+    .tablinks {
+        font-size: 15px;
+    }
+}
+
 
 /* Skills Cards */
 
