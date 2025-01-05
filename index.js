@@ -11,6 +11,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   );
 
+
+  const elementsToAnimate = document.querySelectorAll('.float-up');
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+          } else {
+            entry.target.classList.remove('in-view');
+          }
+      });
+  }, {
+      threshold: 0.2 // Trigger when 20% of the element is visible
+  });
+
+  elementsToAnimate.forEach(element => observer.observe(element));
+
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector("nav ul");
 

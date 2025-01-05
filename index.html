@@ -30,16 +30,15 @@
     <!-- Home Section -->
     <section id="home">
       <div id="particles-js"></div>
-      <div class="content">
+      <div class="home-content float-up">
         <div class="left">
-          <div class="css-typing">
-            <p class="welcome">Hey there, Welcome to my Portfolio.</p>
-            <p class="name">I'm <strong>Puja Patel</strong>.</p>
-            <p class="desc">
-              I am a Software Engineer, passionate about building intuitive
-              applications!
-            </p>
-          </div>
+          <h3>Hey there, Welcome to my Portfolio.</h3>
+          <h2>I'm <strong>Puja Patel</strong>.</h2>
+          <h4>
+            I am a Software Engineer, passionate about building intuitive
+            applications!
+          </h4>
+
           <div class="home-buttons">
             <button onclick="window.open('https://meet.google.com', '_blank')">
               Let's Chat
@@ -51,16 +50,14 @@
             </button>
           </div>
         </div>
-        <div class="right">
-          <img src="./images/logo.png" alt="Puja Patel Logo" />
-        </div>
+        <img src="./images/logo.png" alt="Puja Patel Logo" />
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <div class="content">
+      <h2 class="float-up">About Me</h2>
+      <div class="content float-up">
         <img src="./images/about.png" alt="About Image" />
         <p>
           I'm <strong>Puja Patel</strong>! I’m a full-time
@@ -72,30 +69,30 @@
           course!).<br /><br />
           Right now, I’m diving into cloud computing and working toward my
           <strong>AWS Cloud Practitioner certificate</strong>.<br /><br />
-          When I'm not coding, you can find me hiking, hanging out with my dog,
-          or playing PC games and hitting up arcade bars!<br />
+          When I'm not coding, you can find me hiking with my dog,
+          hitting up arcade bars!<br />
         </p>
       </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
-      <h2>Experience</h2>
-      <div class="timeline">
+      <h2 class="float-up">Experience</h2>
+      <div class="timeline float-up">
         <ul>
           <li>
-            <div class="content">
+            <div class="timeline-content">
               <h3>Junior Software Engineer</h3>
               <p><strong>Cashly, Oakville, ON</strong></p>
               <p>PERN Stack, Jira, SDLC, Full stack development, React.js</p>
             </div>
             <div class="time">
-              <h4>May 2024</h4>
+              <h4>May 2024 - Present</h4>
             </div>
           </li>
 
           <li>
-            <div class="content">
+            <div class="timeline-content">
               <h3>Product Owner Intern - MobiControl Team</h3>
               <p><strong>SOTI, Missisauga, ON</strong></p>
               <p>
@@ -104,17 +101,35 @@
               </p>
             </div>
             <div class="time">
-              <h4>May 2021</h4>
+              <h4>May 2022 - August 2023 </h4>
             </div>
           </li>
-
           <li>
-            <div class="content">
+            <div class="timeline-content">
+              <h3>Website Developer</h3>
+              <p><strong>Western Electrical Engineering Department , london, ON</strong></p>
+              <p>React.js, Reusable Components, Responsiveness </p>
+            </div>
+            <div class="time">
+              <h4>January 2022 - May 2022</h4>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3>Special Project Data Entry Assistant</h3>
+              <p><strong>Western Advanced Operations Department, london, ON</strong></p>
+            </div>
+            <div class="time">
+              <h4>June 2021 - August 2021</h4>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
               <h3>Enrolled at Western University</h3>
               <p>Undergraduate degree in Software Engineering</p>
             </div>
             <div class="time">
-              <h4>Septeber 2019</h4>
+              <h4>Septeber 2019 - April 2024</h4>
             </div>
           </li>
           <div style="clear: both"></div>
@@ -130,9 +145,10 @@
         <!-- Card 1 -->
         <div class="card">
           <div class="card-image">
-            <img src="path-to-image1.jpg" alt="Project 1" />
+            <img src="./images/projects/arecipe.png" alt="Project 1" />
           </div>
           <div class="card-description">
+            
             <p>Description of Project 1.</p>
           </div>
         </div>
@@ -231,7 +247,7 @@
               <p>React</p>
             </div>
           </div>
-          
+
           <div class="skill-card">
             <div class="skill-icon">
               <img src="./images/skills/angular.png" alt="Angular" />
@@ -239,8 +255,7 @@
             <div class="skill-description">
               <p>Angular</p>
             </div>
-          </div> 
-          
+          </div>
         </div>
         <h3>Languages</h3>
         <div class="skills-row">
@@ -282,7 +297,7 @@
               <p>Express.js</p>
             </div>
           </div>
-          
+
           <div class="skill-card">
             <div class="skill-icon">
               <img src="./images/skills/node.png" alt="Node" />
@@ -290,8 +305,7 @@
             <div class="skill-description">
               <p>Node.js</p>
             </div>
-          </div> 
-          
+          </div>
         </div>
         <h3>Languages</h3>
         <div class="skills-row">
@@ -358,7 +372,6 @@
             </div>
           </div>
         </div>
-
       </div>
       <!-- datascience -->
       <div id="datascience" class="tabcontent">
@@ -372,7 +385,7 @@
               <p>Scikit learn</p>
             </div>
           </div>
-          
+
           <div class="skill-card">
             <div class="skill-icon">
               <img src="./images/skills/numpy.png" alt="Numpy" />
@@ -380,7 +393,7 @@
             <div class="skill-description">
               <p>Numpy</p>
             </div>
-          </div> 
+          </div>
           <div class="skill-card">
             <div class="skill-icon">
               <img src="./images/skills/matplot.png" alt="Matplotlib" />
@@ -389,7 +402,7 @@
               <p>Matplotlib</p>
             </div>
           </div>
-          
+
           <div class="skill-card">
             <div class="skill-icon">
               <img src="./images/skills/pandas.png" alt="Pandas" />
@@ -397,8 +410,8 @@
             <div class="skill-description">
               <p>Pandas</p>
             </div>
-          </div> 
-          
+          </div>
+
           <div class="skill-card">
             <div class="skill-icon">
               <img src="./images/skills/seaborn.png" alt="Seaborn" />
@@ -457,8 +470,8 @@
           </div>
         </div>
       </div>
-       <!-- database -->
-       <div id="database" class="tabcontent">
+      <!-- database -->
+      <div id="database" class="tabcontent">
         <div class="skills-row">
           <div class="skill-card">
             <div class="skill-icon">
