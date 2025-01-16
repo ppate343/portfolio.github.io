@@ -164,31 +164,100 @@ nav ul li a:active {
 }
 
 
+/* Adjust the position for better spacing from the right image */
 .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Aligns all content to the left */
     max-width: 50vw;
-    text-align: center;
+    text-align: left;
     gap: 2vh;
 }
 
-
-.left h3 {
-    font-size: clamp(1.2rem, 3vw, 2rem);
+/* Updated Sliding Text Container to avoid overlapping and adjust spacing */
+.slide-text-container {
+    position: relative;
+    height: 4rem; /* Reserves space for the sliding text */
+    margin-bottom: 2rem; /* Adds space between sliding text and the heading */
+    display: flex;
+    justify-content: flex-start; /* Aligns the sliding text to the left */
+    width: 100%;
+    overflow: visible; 
 }
 
-.left h2 {
+/* Sliding Text Animation Adjustments */
+.sliding-text {
     font-size: clamp(2rem, 4vw, 3rem);
+    text-shadow: 0px 15px 5px rgba(255, 255, 255, 0),
+                 10px 20px 5px rgba(255, 255, 255, 0.139),
+                 -10px 20px 5px rgba(255, 255, 255, 0);
     color: hotpink;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideText 9s infinite;
 }
 
+
+/* Timing each heading separately */
+.sliding-text:nth-child(1) {
+    animation-delay: 0s;
+}
+.sliding-text:nth-child(2) {
+    animation-delay: 3s;
+}
+.sliding-text:nth-child(3) {
+    animation-delay: 6s;
+}
+
+/* Keyframes for the sliding effect */
+@keyframes slideText {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    20% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    40% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    60% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+
+/* H4 Sliding Animation */
 .left h4 {
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: 300;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 50;
+    font-style: italic;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInH4 1.5s ease-out forwards;
+    animation-delay: 0.5s; /* Delays the animation to occur after the sliding text */
 }
 
+/* Keyframes for H4 Sliding Effect */
+@keyframes slideInH4 {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 .home-buttons {
     display: flex;
@@ -198,8 +267,8 @@ nav ul li a:active {
 }
 
 .home-buttons button {
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    padding: clamp(10px, 2vw, 15px) clamp(20px, 4vw, 40px);
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem); /* Reduced font size */
+    padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 30px); /* Reduced padding */
     border: none;
     border-radius: 12px;
     background-color: hotpink;
@@ -212,6 +281,7 @@ nav ul li a:active {
     background-color: #ff69b4;
     transform: scale(1.05);
 }
+
 
 
 .home-content img {
@@ -229,10 +299,26 @@ nav ul li a:active {
         flex-direction: column-reverse; 
         gap: 3vh;
         text-align: center;
+        justify-content: center; /* Center content vertically */
+        align-items: center;     /* Center content horizontally */
     }
 
     .left {
         max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2vh;
+    }
+    .slide-text-container {
+        justify-content: center;  /* Centers the sliding text */
+        text-align: center;
+    }
+
+    .sliding-text {
+        font-size: clamp(1.5rem, 4vw, 2.5rem); /* Adjusted for smaller screens */
     }
 
     .home-content img {
@@ -786,17 +872,8 @@ nav ul li a:active {
 
 /* Contact Me Section */
 
-#particles-contact {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    /* Push behind other content */
-    background-color: #000;
-    /* Optional background color */
-}
+
+
 
 
 #contact-me {
@@ -892,4 +969,61 @@ nav ul li a:active {
 
 .footer p {
     margin: 0;
+}
+
+/* Splash Screen Styles */
+
+  
+  #splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#rocket {
+    width: 100px;
+    animation: rocketFly 20s ease-in-out forwards;
+}
+
+#welcome-text {
+    font-size: 2rem;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards 3s;
+}
+
+@keyframes rocketFly {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0) scale(1.5);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hideSplash {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }

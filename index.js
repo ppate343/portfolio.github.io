@@ -111,5 +111,32 @@ document.addEventListener("DOMContentLoaded", () => {
             moveTabLine(activeTab);
         }
     });
+
+    /*****************CONTACT FORM ***********************/
+    const form = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const response = await fetch('https://formspree.io/f/mgvvqlrz', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            formMessage.textContent = 'Message sent, Thanks for contacting! Hope to get back to you soon.';
+            formMessage.style.display = 'block';
+            form.reset();
+        } else {
+            formMessage.textContent = 'Oops! Something went wrong. Please try again.';
+            formMessage.style.color = 'red';
+            formMessage.style.display = 'block';
+        }
+    });
     
 });
