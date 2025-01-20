@@ -111,6 +111,16 @@ document.addEventListener("DOMContentLoaded", () => {
             moveTabLine(activeTab);
         }
     });
+     /*****************Project Card Flip ***********************/
+
+    const cards = document.querySelectorAll(".card.clickable");
+
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        console.log('card clicked', card.classList);
+        card.classList.toggle("flipped");
+      });
+    });
 
     /*****************CONTACT FORM ***********************/
     const form = document.getElementById('contactForm');
