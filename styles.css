@@ -43,6 +43,7 @@ nav {
 nav .logo {
   font-size: 15px;
   color: crimson;
+  text-decoration: none;
 }
 
 nav ul {
@@ -65,7 +66,7 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-  color: rgb(115, 0, 58);
+  color: rgb(115, 0, 29);
 }
 
 .hamburger {
