@@ -10,6 +10,7 @@ body {
   overflow-x: hidden; 
   -ms-overflow-style: none; 
   scrollbar-width: none; 
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -20,6 +21,7 @@ html {
   overflow-x: hidden; 
   -ms-overflow-style: none; 
   scrollbar-width: none; 
+  scroll-behavior: smooth;
 }
 
 /* Navigation Bar */
@@ -40,7 +42,7 @@ nav {
 
 nav .logo {
   font-size: 15px;
-  color: hotpink;
+  color: crimson;
 }
 
 nav ul {
@@ -54,7 +56,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: hotpink;
+  color: crimson;
   transition: color 0.3s;
 }
 
@@ -70,7 +72,7 @@ nav ul li a:active {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: hotpink;
+  color: crimson;
   z-index: 1100;
   position: relative;
 }
@@ -184,7 +186,7 @@ nav ul li a:active {
   text-shadow: 0px 15px 5px rgba(255, 255, 255, 0),
     10px 20px 5px rgba(255, 255, 255, 0.139),
     -10px 20px 5px rgba(255, 255, 255, 0);
-  color: hotpink;
+  color: crimson;
   position: absolute;
   opacity: 0;
   transform: translateX(-100%);
@@ -240,7 +242,7 @@ nav ul li a:active {
 }
 
 .pink {
-  color: hotpink;
+  color: crimson;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5vw;
@@ -266,11 +268,11 @@ nav ul li a:active {
 }
 
 .home-buttons button {
-  font-size: clamp(0.8rem, 1.5vw, 1.2rem); /* Reduced font size */
-  padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 30px); /* Reduced padding */
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem); /* crimsonuced font size */
+  padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 30px); /* crimsonuced padding */
   border: none;
   border-radius: 12px;
-  background-color: hotpink;
+  background-color: crimson;
   color: white;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
@@ -282,20 +284,20 @@ nav ul li a:active {
 }
 
 .home-content img {
-  max-width: 30vw;
+  max-width: 40vw;
   max-height: 50vh;
-  border-radius: 50%;
+  border-radius: 10%;
   object-fit: contain;
   border: 6px solid transparent;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     135deg,
     rgba(228, 121, 255, 0.7),
     rgba(255, 88, 152, 0.7),
     rgba(255, 39, 165, 0.7)
-  );
+  ); */
   padding: 6px;
   box-sizing: border-box;
-  box-shadow: 0 10px 30px rgba(255, 137, 220, 0.562);
+  box-shadow: 0 10px 30px rgba(134, 3, 10, 0.562);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -377,7 +379,7 @@ nav ul li a:active {
 #about h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 5vh;
-  color: hotpink;
+  color: crimson;
 }
 
 /* Flexbox for Layout Control */
@@ -409,7 +411,7 @@ nav ul li a:active {
 
 /* Strong Text Highlight */
 #about p strong {
-  color: hotpink;
+  color: crimson;
   font-weight: bold;
 }
 
@@ -435,7 +437,7 @@ nav ul li a:active {
 
 #experience {
   background-color: rgb(5, 0, 4);
-  color: hotpink;
+  color: crimson;
   padding: 50px 20px;
   text-align: center;
 }
@@ -453,6 +455,15 @@ nav ul li a:active {
 }
 
 /*time line*/
+.company-link {
+  color: lightblue; /* keeps the text color the same as surrounding text */
+  text-decoration: none; /* removes the underline */
+}
+
+.company-link:hover {
+  text-decoration: underline; /* optional: underline on hover for clarity */
+}
+
 .timeline {
   position: relative;
   margin: 50px auto;
@@ -495,14 +506,14 @@ nav ul li a:active {
   margin: 20px;
   border-radius: 2%;
   color: white;
-  background: radial-gradient(square, hotpink, rgba(0, 0, 0, 0.8));
-  box-shadow: 0 0 20px 5px hotpink;
+  background: radial-gradient(square, crimson, rgba(0, 0, 0, 0.8));
+  box-shadow: 0 0 20px 5px crimson;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .timeline-content:hover {
   transform: scale(1.05); /* Slight zoom */
-  box-shadow: 0 0 40px 15px hotpink;
+  box-shadow: 0 0 40px 15px crimson;
 }
 
 .timeline ul li:nth-child(odd):before {
@@ -512,7 +523,7 @@ nav ul li a:active {
   height: 10px;
   top: 24px;
   right: -6px;
-  background: hotpink;
+  background: crimson;
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
 }
@@ -523,14 +534,14 @@ nav ul li a:active {
   height: 10px;
   top: 24px;
   left: -4px;
-  background: hotpink;
+  background: crimson;
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
 }
 .timeline ul li h3 {
   padding: 0;
   margin: 0;
-  color: hotpink;
+  color: crimson;
   font-weight: 600;
 }
 .timeline ul li p {
@@ -548,7 +559,7 @@ nav ul li a:active {
   right: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: hotpink;
+  background: crimson;
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
@@ -559,7 +570,7 @@ nav ul li a:active {
   left: -165px;
   margin: 0;
   padding: 8px 16px;
-  background: hotpink;
+  background: crimson;
   color: #fff;
   border-radius: 18px;
   box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
@@ -606,7 +617,7 @@ nav ul li a:active {
 
 #projects {
   background-color: white;
-  color: hotpink;
+  color: crimson;
   padding: 50px 20px;
   text-align: center;
 }
@@ -614,7 +625,7 @@ nav ul li a:active {
 #projects h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: hotpink;
+  color: crimson;
 }
 
 #projects .content {
@@ -705,7 +716,7 @@ nav ul li a:active {
 .card-tech-stack p {
   font-style: italic;
   font-size: 18px;
-  color: hotpink;
+  color: crimson;
   margin: 10px 0;
 }
 
@@ -779,7 +790,7 @@ nav ul li a:active {
 
 #skills {
   background-color: black;
-  color: hotpink;
+  color: crimson;
   padding: 50px 20px;
   text-align: center;
 }
@@ -818,13 +829,13 @@ nav ul li a:active {
 
 /* Hover effect for tab links */
 .tablinks:hover {
-  color: hotpink;
+  color: crimson;
   transform: scale(1.05);
 }
 
 /* Active tab link styling */
 .tablinks.active {
-  color: hotpink;
+  color: crimson;
   font-weight: bold;
 }
 
@@ -832,7 +843,7 @@ nav ul li a:active {
 .tabs-line {
   position: absolute;
   height: 2px;
-  background-color: hotpink;
+  background-color: crimson;
   bottom: 0;
   transition: left 0.2s ease, width 0.2s ease;
   width: 0; /* Set initial width to 0 */
@@ -926,7 +937,7 @@ nav ul li a:active {
 
 .non-technical h4 {
   font-size: 2.5vh; 
-  color: hotpink; 
+  color: crimson; 
   margin-bottom: 2%; 
   font-weight: bold;
   text-transform: uppercase; 
@@ -950,7 +961,7 @@ nav ul li a:active {
 
 #contact-me {
   background-color: rgb(255, 255, 255);
-  color: hotpink;
+  color: crimson;
   padding: 50px 20px;
   text-align: center;
 }
@@ -994,8 +1005,8 @@ nav ul li a:active {
 }
 
 .contact-form button {
-  background-color: hotpink;
-  /* Hotpink button */
+  background-color: crimson;
+  /* crimson button */
   color: white;
   border: none;
   padding: 12px 20px;
@@ -1007,7 +1018,7 @@ nav ul li a:active {
 
 .contact-form button:hover {
   background-color: #e6005c;
-  /* Darker hotpink on hover */
+  /* Darker crimson on hover */
 }
 
 /* Social Icons Styling */
@@ -1020,14 +1031,14 @@ nav ul li a:active {
 
 .social-icons .icon {
   font-size: 40px;
-  color: hotpink;
+  color: crimson;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .social-icons .icon:hover {
   color: #ff007f;
-  /* Hotpink hover effect */
+  /* crimson hover effect */
 }
 
 /* Footer Styling */
