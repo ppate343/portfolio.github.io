@@ -1,806 +1,619 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puja Patel Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <script src="particles/particles.min.js"></script>
-    <script src="particles/particles.js"></script>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div class="logo" href="#home"><a class='logo' href="#home">Puja | Patel</a></div>
-      <div class="hamburger">&#9776;</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-      </ul>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Puja Patel</title>
+  <meta name="description" content="Portfolio of Puja Patel — projects, skills, experience, education, and blog." />
+
+  <!-- Favicons that we swap in JS -->
+  <link id="favicon" rel="icon" type="image/png" href="/favicon.png" />
+
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background accents -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="grid-sheen"></div>
+  </div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        <span>Puja Patel</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#skills">Skills</a>
+        <!-- <a href="#projects">Projects</a> -->
+        <a href="#roles">Roles</a>
+        <a href="#education">Education</a>
+        <a href="#blog">Blog</a>
+        <a class="pill" href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="toggle-icon" aria-hidden="true">☾</span>
+        </button>
+
+        <button class="icon-btn burger" id="burger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
+  </header>
 
-    <!-- Home Section -->
-    <section id="home">
-      <div id="particles-js"></div>
-      <div class="home-content float-up">
-        <div class="left">
-          <div class="slide-text-container">
-            <h2 class="sliding-text">INNOVATIVE</h2>
-            <h2 class="sliding-text">CREATIVE</h2>
-            <h2 class="sliding-text">ANALYTICAL</h2>
-          </div>
-          <h3 class="home-desc">
-            I’m <strong>Puja Patel</strong>, a software engineer graduate who
-            loves building user-friendly apps that solve business problems with
-            automation, generative AI, and the cloud.
-          </h3>
-          <h3 class="home-desc pink">
-            Product Manager | Software Engineer | Cloud Computing
-          </h3>
+  <main id="top">
+    <!-- HERO -->
+    <section id="hero" class="hero container section">
+      <div class="hero-left reveal">
+        <div class="kicker">Design • Product • Cloud • Full-Stack</div>
+        <h1 class="hero-title">Turning ideas into reliable, production-ready products.</h1>
 
-          <div class="home-buttons">
-            <button
-              onclick="window.open('https://calendar.google.com/calendar/appointments/schedules/AcZssZ3nVJqfVsqifg-uNeG2SJJavYCdn2hqUGBTuvGuheQN_P31-EeY9QY2L0dV9UxaR0rzGw8_MSgk?gv=true', '_blank')"
-            >
-              Let's Chat
-            </button>
-            <a href="#about" 
-              ><button>Get to Know Me!</button></a
-            >
-          </div>
-        </div>
-        <img src="./images/logo.jpg" alt="Puja Patel Logo" />
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <h2 class="float-up">About Me</h2>
-      <div class="content float-up">
-        <img src="./images/about-2.png" alt="About Image" />
-        <p>
-          I’m a <strong>Software Engineer and Product Manager</strong> with 3+
-          years of hands-on experience building web applications and leading
-          innovative product initiatives. I specialize in combining AI-driven
-          solutions, cloud infrastructure, and data-driven decision-making to
-          streamline complex workflows and improve user experience.
-          <br /><br />In my recent roles, I’ve led cross-functional teams to
-          design and launch impactful, automated systems. I thrive on bridging
-          technical execution with product strategy, managing agile workflows,
-          CI/CD pipelines, and stakeholder engagement to deliver measurable
-          results.<br /><br />
-          Passionate about solving real-world problems, I enjoy exploring
-          creative approaches to technology, whether it’s building AR-enabled
-          apps for budget-conscious students or optimizing business operations.
-          Outside of work, I’m often hiking with my dog, exploring arcade bars,
-          or experimenting with new tech projects.<br />
+        <p class="hero-sub">
+          I’m <strong>Puja Patel</strong>, a
+          <span class="accent">Product Engineer</span> who supports shipping
+          SaaS products end-to-end, from idea and UI to scalable AWS
+          architectures, CI/CD, and production deployment.
         </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#roles">View Experience</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric">
+            <div class="metric-num" data-count="3">0</div>
+            <div class="metric-label">Projects shipped</div>
+          </div>
+          <div class="metric">
+            <div class="metric-num" data-count="4">0</div>
+            <div class="metric-label">Years experience</div>
+          </div>
+          <div class="metric">
+            <div class="metric-num" data-count="2">0</div>
+            <div class="metric-label">Production deployments</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="glass-card">
+          <div class="glass-top">
+            <span class="chip">Now</span>
+            <span class="chip">Open to product & engineering roles</span>
+          </div>
+
+          <div class="glass-body">
+            <div class="avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-inner">PP</div>
+            </div>
+
+            <ul class="quick">
+              <li>
+                <span class="dot"></span> Full-Stack • React • TypeScript •
+                Next.js
+              </li>
+              <li>
+                <span class="dot"></span> Cloud Engineering • EC2 • TCP/IP •
+                CI/CD
+              </li>
+              <li>
+                <span class="dot"></span> Product Management • Jira •
+                Confluence • Bitbucket
+              </li>
+            </ul>
+
+            <div class="social">
+              <a href="https://github.com/ppate343" aria-label="GitHub" class="social-btn">GitHub</a>
+              <a href="https://www.linkedin.com/in/ppate343/" aria-label="LinkedIn" class="social-btn">LinkedIn</a>
+              <!-- <a href="#" aria-label="Resume" class="social-btn">Resume</a> -->
+            </div>
+          </div>
+
+          <div class="glass-footer">
+            <div class="status"><span class="ping"></span> Online</div>
+            <div class="tiny">GTHA • Toronto • Hybrid/Remote-friendly</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <h2 class="float-up">Experience</h2>
-      <div class="timeline float-up">
-        <ul>
-          <li>
-            <div class="timeline-content">
-              <h3>Technical Product Manager</h3>
-              <p>
-                <strong>
-                  <a
-                    href="https://Tekrata.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="company-link"
-                  >
-                    Tekrata, Brooklyn, NY (Remote)
-                  </a></strong
-                >
-              </p>
-              <p>
-                Led cross-functional teams, implemented CI/CD pipelines,
-                designed internal APIs, and oversaw AI-driven automation
-                projects to streamline operations and improve efficiency.
-              </p>
-            </div>
-            <div class="time">
-              <h4>Oct 2024 - Present</h4>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-content">
-              <h3>Software Engineer | Product Manager</h3>
-              <p>
-                <strong>
-                  <a
-                    href="https://gocashly.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="company-link"
-                  >
-                    Cashly, Oakville, ON
-                  </a></strong
-                >
-              </p>
-              <p>
-                Led a team of 3 engineers to build a fully automated mortgage
-                CRM and recommendation engine, implemented Agile workflows and
-                CI/CD pipelines, leveraged AI tools for faster development,
-                managed AWS infrastructure and Supabase PostgreSQL, and created
-                pitch decks for stakeholders and lenders.
-              </p>
-            </div>
-            <div class="time">
-              <h4>May 2024 - Present</h4>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-content">
-              <h3>Product Owner - MobiControl</h3> 
-              <p>
-                <strong>
-                  <a
-                    href="https://soti.net/products/soti-mobicontrol/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="company-link"
-                  >
-                    SOTI MobiControl, Missisauga, ON
-                  </a></strong
-                >
-              </p>
-              <p>
-                Agile methodologies, Jira, Security Vulnerability Management,
-                SDLC
-              </p>
-            </div>
-            <div class="time">
-              <h4>May 2022 - August 2023</h4>
-            </div>
-          </li>
-          <div style="clear: both"></div>
-        </ul>
+    <!-- SKILLS -->
+    <section id="skills" class="container section">
+      <div class="section-head reveal">
+        <h2>Skills</h2>
+        <!-- <p>
+          End-to-end product delivery, building on AWS, coordinating across
+          teams, and translating technical work for non-technical
+          stakeholders.
+        </p> -->
       </div>
-    </section>
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2 class="float-up">My Projects</h2>
 
-      <!-- Container for Cards -->
-      <div class="card-container float-up">
-        <!-- Card 1 -->
-        <div class="card">
-          <div class="card clickable">
-            <div class="card-inner">
-              <div class="card-front">
-                <div class="card-image">
-                  <img src="./images/projects/aurora.jpg" alt="Project 1" />
-                </div>
-                <h3>Aurora's Ascendant</h3>
-                <div class="card-tech-stack">
-                  <p>C#, Unity, Store Assets</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="card-description">
-                  <p>
-                    I built an RPG game in Unity using C# that immerses players
-                    in an open world with dynamic lighting, advanced AI, and
-                    melee combat. Players explore, battle enemies, and collect
-                    items to uncover the fate of Earth. I implemented a
-                    first-person controller and integrated high-quality assets
-                    from Unity’s store, enhancing the game's atmosphere. This
-                    project showcases my skills in game development, AI, C#
-                    programming, and using Unity to create an engaging
-                    experience.
-                  </p>
-                  <a
-                    href="https://drive.google.com/drive/folders/1kbKa5ZixOvRkCimDKUalkieAwxHteE4f?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Project Files
-                  </a>
-                </div>
-              </div>
+      <div class="skills-shell reveal">
+        <!-- LEFT: chart + description -->
+        <div class="skills-left">
+          <div class="donut" id="skillsDonut" role="img" aria-label="Skill technologies">
+            <svg class="donut-svg" viewBox="0 0 120 120" aria-hidden="true">
+              <g id="donutSegs"></g>
+            </svg>
+            <div class="donut-center">
+              <strong id="skillsTitle"></strong>
+              <small class="muted"></small>
+            </div>
+            <div class="donut-tip" id="donutTip" role="status" aria-live="polite"></div>
+          </div>
+
+          <div class="skills-icons" id="skillsIcons" aria-label="Technologies"></div>
+
+          <p class="skills-desc muted" id="skillsDesc">
+            Building scalable UI and backend features with React, TypeScript,
+            and modern web patterns.
+          </p>
+        </div>
+        <div class="skills-right" role="list" aria-label="Skill categories">
+          <!-- RIGHT: selectable skill list -->
+          <button class="skill-pill is-active" type="button" data-title="Full Stack"
+            data-desc="Built and shipped production apps like gocashly.io—a Next.js full-stack CRM using Supabase APIs—and CopayAssist, a React application hosted on CloudFront."
+            data-icons="React,Next,Node.js,TypeScript,REST,NPM" data-weights="60,40">
+            Full Stack
+          </button>
+
+          <button class="skill-pill" type="button" data-title="AWS Architecture" data-pct="85"
+            data-desc="Designed multiple AWS architectures, including hosting GoCashly.io on EC2 with ALB routing via Route53 (HTTP→HTTPS) inside a private VPC, and Qadra.io on ECS using ECR-backed images behind an ALB."
+            data-icons="EC2,ALB/VPC,ECS,Docker,CloudWatch,R53,ACM,IAM,Linux,AWS," data-weights="30,40,30">
+            AWS Architecture
+          </button>
+
+          <button class="skill-pill" type="button" data-title="CI/CD & Delivery" data-pct="88"
+            data-desc="Implemented CI/CD pipelines for Cashly.io using GitHub to AWS via SSM Agent, and Bitbucket-based pipelines deploying to S3 and CloudFront using AWS credentials."
+            data-icons=" Git,Bitbucket,CI/CD," data-weights="50,50">
+            CI/CD & Delivery
+          </button>
+
+          <button class="skill-pill" type="button" data-title="Application Security" data-pct="80"
+            data-desc="Owned security hardening across deployed applications, managing post-pentest vulnerability backlogs, dependency remediation, and enforcing TLS, ALB routing, ACM certificates, and WAF protections."
+            data-icons="IAM,ACM,WAF,NPM,AWS," data-weights="50,50">
+            Application Security
+          </button>
+
+          <button class="skill-pill" type="button" data-title="Product Execution" data-pct="78"
+            data-desc="Led product execution across multiple products by managing Jira boards and sprint workflows, writing design docs in Confluence, and maintaining Bitbucket repositories from planning to release."
+            data-icons="Jira,Confluence,Bitbucket" data-weights="40,20,40">
+            Product Execution
+          </button>
+
+          <button class="skill-pill" type="button" data-title="Design & Content" data-pct="70"
+            data-desc="Designed UI assets, logos, and product visuals, and created demo videos and tutorials to support onboarding and adoption across multiple shipped products."
+            data-icons="Figma,Capcut,Artlist.io,Canva">
+            Design & Content
+          </button>
+        </div>
+      </div>
+
+      <div class="skills-soft reveal">
+        <h3 class="skills-soft-title">Ways I work</h3>
+        <div class="soft-grid">
+          <div class="soft-item">
+            <div class="soft-kicker">Communication</div>
+            <div class="muted">
+              Translate technical decisions into clear client-friendly
+              tradeoffs.
             </div>
           </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="card">
-          <div class="card clickable">
-            <div class="card-inner">
-              <div class="card-front">
-                <div class="card-image">
-                  <img src="./images/projects/arecipe.png" alt="Project 1" />
-                </div>
-                <h3>ARecipe</h3>
-                <div class="card-tech-stack">
-                  <p>Angular, MongoDB, Node.js</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="card-description">
-                  <p>
-                    ARecipe is a mobile app designed to help college students
-                    discover recipes based on available ingredients, reduce food
-                    waste, and learn to cook interactively. I collaborated with
-                    a team of 6 to develop this application using Angular,
-                    MongoDB, and Node.js, contributing to both the front-end and
-                    back-end to create a seamless, user-friendly experience.
-                  </p>
-                  <a
-                    href="https://github.com/UnderCooked4450/ARecipeBook"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View on GitHub
-                  </a>
-                </div>
-              </div>
+          <div class="soft-item">
+            <div class="soft-kicker">Collaboration</div>
+            <div class="muted">
+              Partner across teams to unblock work and ship smoothly.
             </div>
           </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <div class="card clickable">
-            <div class="card-inner">
-              <div class="card-front">
-                <div class="card-image">
-                  <img src="./images/about-2.png" alt="Project 1" />
-                </div>
-                <h3>Portfolio</h3>
-                <div class="card-tech-stack">
-                  <p>HTML, CSS, JavaScript</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="card-description">
-                  <p>
-                    My portfolio website, built from the ground up using pure
-                    HTML, CSS, and JavaScript, showcases my skills in front-end
-                    development without relying on any frameworks. The site
-                    features a fully responsive, sleek design that offers a
-                    seamless user experience, demonstrating my ability to craft
-                    clean, efficient code while ensuring modern functionality
-                    across all devices.
-                  </p>
-                  <a
-                    href="https://github.com/ppate343/portfolio.github.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View on GitHub
-                  </a>
-                </div>
-              </div>
+          <div class="soft-item">
+            <div class="soft-kicker">Execution</div>
+            <div class="muted">
+              Manage multiple priorities, keep Jira clean, and deliver
+              reliably.
             </div>
           </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <div class="card clickable">
-            <div class="card-inner">
-              <div class="card-front">
-                <div class="card-image">
-                  <img src="./images/projects/dlr.png" alt="Project 1" />
-                </div>
-                <h3>Diabetes Logistic Regression</h3>
-                <div class="card-tech-stack">
-                  <p>Python, Jupyter notebook, ScikitLearn, Pandas</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="card-description">
-                  <p>
-                    I developed a logistic regression model to predict diabetes
-                    risk using the Pima Indians Diabetes Database. After
-                    cleaning the data and establishing a baseline accuracy, I
-                    optimized the model through regularization and threshold
-                    adjustments. The best-performing model achieved 72.3% recall
-                    and 64.2% precision, balancing sensitivity and specificity.
-                    I further tested the model using a Stochastic Gradient
-                    Descent (SGD) classifier, achieving a strong balanced
-                    accuracy of 86.64%. This project showcases my skills in data
-                    cleaning, model optimization, and handling class imbalance.
-                  </p>
-                  <a
-                    href="https://github.com/ppate343/Data-Science-Projects/tree/main/Diabetes%20Classification"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View on GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card">
-          <div class="card clickable">
-            <div class="card-inner">
-              <div class="card-front">
-                <div class="card-image">
-                  <img src="./images/projects/clv.jpg" alt="Project 1" />
-                </div>
-                <h3>CLV Prediction</h3>
-                <div class="card-tech-stack">
-                  <p>Python, Jupyter notebook, ScikitLearn, Pandas</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="card-description">
-                  <p>
-                    I built a model to predict Customer Lifetime Value (CLV) for
-                    an auto insurance company, focusing on data cleaning,
-                    feature engineering, and model optimization. After
-                    standardizing and transforming the data, I compared Linear,
-                    Ridge, Lasso, and Elastic Net regressions. Lasso and Elastic
-                    Net yielded the best results, with the lowest Mean Squared
-                    Error (MSE) of 0.1099. This project highlights my skills in
-                    data preparation, feature engineering, and model evaluation.
-                  </p>
-                  <a
-                    href="https://github.com/ppate343/Data-Science-Projects/tree/main/Customer%20Lifetime%20Value%20Prediction"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View on GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="card">
-          <div class="card clickable">
-            <div class="card-inner">
-              <div class="card-front">
-                <div class="card-image">
-                  <img src="./images/projects/algo.png" alt="Project 1" />
-                </div>
-                <h3>AlgoRhythm</h3>
-                <div class="card-tech-stack">
-                  <p>React.js, Node.js, Firebase, GCP</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="card-description">
-                  <p>
-                    I collaborated with 6 team members to develop AlgoRhythm, a
-                    React-based game that teaches the merge sort algorithm using
-                    a piano interface. We utilized React.js, Node.js, Firebase,
-                    and GCP. I took the lead in product management, managed Jira
-                    tasks, and contributed to frontend development. This project
-                    showcases my skills in product management, frontend
-                    development, and cloud technologies.
-                  </p>
-                  <a
-                    href="https://github.com/ppate343/Algorhythm-"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View on GitHub
-                  </a>
-                </div>
-              </div>
+          <div class="soft-item">
+            <div class="soft-kicker">Ownership</div>
+            <div class="muted">
+              From discovery to deployment, drive outcomes, not just tickets.
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2 class="float-up">My Skills</h2>
+    <!-- PROJECTS -->
+    <!-- <section id="projects" class="container section">
+      <div class="section-head reveal">
+        <h2>Personal Projects</h2>
 
-      <div class="tabs float-up">
-        <button class="tablinks" data-category="frontend">Frontend</button>
-        <button class="tablinks" data-category="backend">Backend</button>
-        <button class="tablinks" data-category="cloud">Cloud</button>
-        <button class="tablinks" data-category="ml">LLM AI/ML</button>
-        <button class="tablinks" data-category="product">Product UI/UX</button>
-        <button class="tablinks" data-category="database">Database</button>
-        <button class="tablinks" data-category="other">Other</button>
-        <div class="tabs-line"></div>
       </div>
 
-      <!-- Tab Content -->
-      <!-- frontend -->
-      <div id="frontend" class="tabcontent float-up">
-        <h3>Frameworks</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/react.png" alt="React" />
-            </div>
-            <div class="skill-description">
-              <p>React</p>
-            </div>
+      <div class="cards-grid">
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="tag">Featured</span>
+            <span class="tag ghost">Web App</span>
           </div>
+          <h3>Project One</h3>
+          <p class="muted">
+            A short description of what it does, who it’s for, and the impact.
+          </p>
+          <div class="card-actions">
+            <a class="link" href="#">Live</a>
+            <a class="link" href="#">Code</a>
+          </div>
+        </article>
 
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/angular.png" alt="Angular" />
-            </div>
-            <div class="skill-description">
-              <p>Angular</p>
-            </div>
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="tag">UI</span>
+            <span class="tag ghost">Animation</span>
           </div>
-        </div>
-        <h3>Languages</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/html.png" alt="HTML" />
-            </div>
-            <div class="skill-description">
-              <p>HTML</p>
-            </div>
+          <h3>Project Two</h3>
+          <p class="muted">
+            Explain the tech and highlight what makes it impressive.
+          </p>
+          <div class="card-actions">
+            <a class="link" href="#">Live</a>
+            <a class="link" href="#">Code</a>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/css.png" alt="CSS" />
-            </div>
-            <div class="skill-description">
-              <p>CSS</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/js.png" alt="JavaScript" />
-            </div>
-            <div class="skill-description">
-              <p>JavaScript</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- backend -->
-      <div id="backend" class="tabcontent">
-        <h3>Frameworks</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/express.png" alt="Express" />
-            </div>
-            <div class="skill-description">
-              <p>Express.js</p>
-            </div>
-          </div>
+        </article>
 
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/node.png" alt="Node" />
-            </div>
-            <div class="skill-description">
-              <p>Node.js</p>
-            </div>
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="tag">Tool</span>
+            <span class="tag ghost">Open Source</span>
           </div>
-        </div>
-        <h3>Languages</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/sql.png" alt="SQL" />
-            </div>
-            <div class="skill-description">
-              <p>SQL</p>
-            </div>
+          <h3>Project Three</h3>
+          <p class="muted">
+            Small tool, huge value — mention speed, UX, or results.
+          </p>
+          <div class="card-actions">
+            <a class="link" href="#">Live</a>
+            <a class="link" href="#">Code</a>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/python.png" alt="Python" />
-            </div>
-            <div class="skill-description">
-              <p>Python</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/js.png" alt="JavaScript" />
-            </div>
-            <div class="skill-description">
-              <p>JavaScript</p>
-            </div>
-          </div>
-        </div>
+        </article>
       </div>
-      <!-- cloud -->
-      <div id="cloud" class="tabcontent">
-        <h3>Amazon Web Services</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/iam.png" alt="IAM" />
-            </div>
-            <div class="skill-description">
-              <p>IAM Roles</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/ec2.png" alt="EC2" />
-            </div>
-            <div class="skill-description">
-              <p>Elastic Cloud</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/s3.png" alt="S3" />
-            </div>
-            <div class="skill-description">
-              <p>S3</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/security.png" alt="Security" />
-            </div>
-            <div class="skill-description">
-              <p>Security</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- AI/ML -->
-      <div id="ml" class="tabcontent">
-        <h3>Frameworks</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/sklearn.png" alt="ScikitLearn" />
-            </div>
-            <div class="skill-description">
-              <p>Scikit learn</p>
-            </div>
-          </div>
+    </section> -->
 
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/numpy.png" alt="Numpy" />
-            </div>
-            <div class="skill-description">
-              <p>Numpy</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/matplot.png" alt="Matplotlib" />
-            </div>
-            <div class="skill-description">
-              <p>Matplotlib</p>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/pandas.png" alt="Pandas" />
-            </div>
-            <div class="skill-description">
-              <p>Pandas</p>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/seaborn.png" alt="Seaborn" />
-            </div>
-            <div class="skill-description">
-              <p>Seaborn</p>
-            </div>
-          </div>
-
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/langchain.png" alt="Seaborn" />
-            </div>
-            <div class="skill-description">
-              <p>Langchain</p>
-            </div>
-          </div>
-        </div>
-        <h3>Languages & APIs</h3>
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/python.png" alt="Python" />
-            </div>
-            <div class="skill-description">
-              <p>Python</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/openai.jpg" alt="Python" />
-            </div>
-            <div class="skill-description">
-              <p>OpenAI</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- product management -->
-      <div id="product" class="tabcontent">
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/jira.png" alt="Jira" />
-            </div>
-            <div class="skill-description">
-              <p>Jira</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/confluence.png" alt="Confluence" />
-            </div>
-            <div class="skill-description">
-              <p>Confluence</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/figma.png" alt="Figma" />
-            </div>
-            <div class="skill-description">
-              <p>Figma</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/salesforce.png" alt="Salesforce" />
-            </div>
-            <div class="skill-description">
-              <p>Salesforce</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- database -->
-      <div id="database" class="tabcontent">
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/mysql.png" alt="mysql" />
-            </div>
-            <div class="skill-description">
-              <p>MySQL</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/mongo.png" alt="mongo" />
-            </div>
-            <div class="skill-description">
-              <p>MongoDB</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/postgres.png" alt="postgres" />
-            </div>
-            <div class="skill-description">
-              <p>Postgres</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- other -->
-      <div id="other" class="tabcontent">
-        <div class="skills-row">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/ssh.png" alt="ssh" />
-            </div>
-            <div class="skill-description">
-              <p>SSH</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/linux.png" alt="linux" />
-            </div>
-            <div class="skill-description">
-              <p>linux</p>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./images/skills/git.png" alt="Git" />
-            </div>
-            <div class="skill-description">
-              <p>Git</p>
-            </div>
-          </div>
-        </div>
+    <!-- ROLES / EXPERIENCE -->
+    <section id="roles" class="container section">
+      <div class="section-head reveal">
+        <h2>Roles</h2>
       </div>
 
-      <div class="non-technical float-up">
-        <h4>Non technical skills</h4>
-        <ul>
-          <li>Self Learner</li>
-          <li>Organized</li>
-          <li>Team Player</li>
-          <li>Problem Solver</li>
-        </ul>
+      <div class="timeline">
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <div class="t-top">
+              <h3>
+                <a href="https://qadra.io" target="_blank" rel="noopener noreferrer" class="role-link">
+                  Qadra </a>/ Engineering — Technical PM
+              </h3>
+              <span class="t-time">Oct 2025 — Present</span>
+            </div>
+            <ul>
+              <li>
+                Defined and coordinated the AWS production launch plan for
+                Qadra.io using ECS/ECR and Jira.
+              </li>
+              <li>
+                Supported a distributed engineering team to unblock deployment
+                issues and hit a tight deadline.
+              </li>
+              <li>
+                Shipped UI updates and demo assets to support a successful
+                product launch.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <div class="t-top">
+              <h3>
+                <a href="https://gocashly.io" target="_blank" rel="noopener noreferrer" class="role-link">
+                  Cashly
+                </a>
+                / Engineering — AWS Cloud Engineer · Full Stack Developer · PM
+              </h3>
+              <span class="t-time">May 2024 — Present</span>
+            </div>
+            <ul>
+              <li>
+                Designed and built the Cashly CRM from the ground up, leading
+                full-stack development with Supabase, custom APIs, and a
+                production AWS architecture.
+              </li>
+              <li>
+                Implemented CI/CD pipelines that reduced manual deployments
+                from ~3 hours to ~2 minutes.
+              </li>
+              <li>
+                Led engineering execution by running scrum meetings, guiding
+                three developers, and serving as the primary technical point
+                of contact.
+              </li>
+              <li>
+                Drove the product from initial concept to daily use by ~10
+                agents at the brokerage.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <div class="t-top">
+              <h3>
+                <a href="https://tekrata.com" target="_blank" rel="noopener noreferrer" class="role-link">
+                  Tekrata </a>/ Engineering — Technical PM
+              </h3>
+              <span class="t-time">Dec 2024 — March 2026</span>
+            </div>
+            <ul>
+              <li>
+                Managed Jira boards and sprint execution for Copay programs
+                (e.g., Xolair), increasing delivery throughput by ~50% through
+                improved planning and prioritization.
+              </li>
+              <li>
+                Led delivery of the PDV project by serving as the single point
+                of contact for API and data issues, coordinating with
+                developers, database engineers, business analysts, and
+                stakeholders to enable enrollment and claims data integration
+                with Genentech.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <div class="t-top">
+              <h3>
+                <a href="https://soti.net/products/soti-mobicontrol/" target="_blank" rel="noopener noreferrer"
+                  class="role-link">
+                  SOTI
+                </a>
+                / MobiControl — Product Owner Intern
+              </h3>
+              <span class="t-time">May 2022 — Aug 2023</span>
+            </div>
+            <ul>
+              <li>
+                Researched and evaluated Digital Adoption Platforms (DAP) to
+                support product onboarding strategy.
+              </li>
+              <li>
+                Managed the security vulnerability backlog and developed a
+                two-year remediation plan to address identified risks.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact-me">
-      <h2 class="float-up">Contact Me</h2>
-      <div class="contact-form-container float-up">
-        <form id="contactForm" method="post" class="contact-form">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="Your email address"
-          />
-
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            required
-            placeholder="Your message here"
-          ></textarea>
-
-          <button type="submit">Send</button>
-        </form>
-        <p
-          id="formMessage"
-          style="display: none; color: green; margin-top: 10px"
-        ></p>
+    <!-- EDUCATION -->
+    <section id="education" class="container section">
+      <div class="section-head reveal">
+        <h2>Education</h2>
       </div>
 
-      <!-- Social Icons -->
-      <div class="social-icons float-up">
-        <a
-          href="https://www.linkedin.com/in/ppate343/"
-          target="_blank"
-          class="icon linkedin"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a
-          href="https://github.com/ppate343"
-          target="_blank"
-          class="icon github"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:ppate2208@gmail.com" class="icon email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-head">
+            <img src="images/education/mcmaster.jpg" alt="McMaster University logo" class="edu-logo" loading="lazy" />
+            <div class="edu-text">
+              <h3>McMaster University</h3>
+              <div class="muted" style="font-weight:700; margin-top:2px;">
+                W Booth School of Engineering Practice & Technology
+              </div>
+              <div class="edu-meta">
+                MEng, Engineering Entrepreneurship & Innovation •
+                <span class="edu-dates">Jan 2026 – Dec 2026 (Expected)</span>
+              </div>
+            </div>
+          </div>
+          <p class="muted">Focus on design, innovation, and technology commercialization.</p>
+        </div>
 
-      <!-- No Copyright Tag -->
-      <footer class="footer float-up">
-        <p>&copy;Puja Patel 2025</p>
-      </footer>
+        <div class="edu-card reveal">
+          <div class="edu-head">
+            <img src="images/education/western.jfif" alt="University of Western Ontario logo" class="edu-logo"
+              loading="lazy" />
+            <div class="edu-text">
+              <h3>University of Western Ontario</h3>
+              <div class="muted" style="font-weight:700; margin-top:2px;">
+                Faculty of Engineering
+              </div>
+              <div class="edu-meta">
+                BEng, Software Engineering •
+                <span class="edu-dates">2019 – 2024</span>
+              </div>
+            </div>
+          </div>
+          <p class="muted">Western Hyperloop (VP Communications), WesternU Hackathon.</p>
+        </div>
+      </div>
     </section>
-    <script src="index.js"></script>
-    <script src="particles.js"></script>
-  </body>
+
+    <!-- BLOG / GALLERY -->
+    <section id="blog" class="container section">
+      <div class="section-head reveal">
+        <h2>Beyond the Code</h2>
+        <p>Milestones, team moments, and life beyond work.</p>
+
+      </div>
+
+      <div class="masonry">
+        <!-- TALK / CEREMONY (SWITCHABLE - 5 images) -->
+        <article class="post reveal">
+          <div class="post-img glow switchable" data-active="0">
+            <!-- IMAGE 1 -->
+            <div class="switch-img active">
+              <img src="images/blogs/ring-1.jpg" alt="Engineering Ring Ceremony photo 1" loading="lazy" />
+            </div>
+
+            <!-- IMAGE 2 -->
+            <div class="switch-img">
+              <img src="images/blogs/ring-2.jpg" alt="Engineering Ring Ceremony photo 2" loading="lazy" />
+            </div>
+
+            <!-- IMAGE 3 -->
+            <div class="switch-img">
+              <img src="images/blogs/ring-3.jpg" alt="Engineering Ring Ceremony photo 3" loading="lazy" />
+            </div>
+
+            <!-- IMAGE 4 -->
+            <div class="switch-img">
+              <img src="images/blogs/ring-4.jpg" alt="Engineering Ring Ceremony photo 4" loading="lazy" />
+            </div>
+
+            <!-- IMAGE 5 -->
+            <div class="switch-img">
+              <img src="images/blogs/ring-5.jpg" alt="Engineering Ring Ceremony photo 5" loading="lazy" />
+            </div>
+
+            <div class="switch-controls" aria-label="Ring ceremony photos">
+              <button class="switch-btn active" aria-label="Photo 1"></button>
+              <button class="switch-btn" aria-label="Photo 2"></button>
+              <button class="switch-btn" aria-label="Photo 3"></button>
+              <button class="switch-btn" aria-label="Photo 4"></button>
+              <button class="switch-btn" aria-label="Photo 5"></button>
+            </div>
+
+            <span class="badge">Milestone</span>
+          </div>
+
+          <div class="post-body">
+            <h3>Engineering Ring Ceremony</h3>
+            <p class="muted">
+              Received my Iron Ring at the 2024 Ring Ceremony (Call of an Engineer). A reminder of responsibility—and a
+              proud moment shared with my capstone team.
+            </p>
+            <div class="post-meta">2024 • Iron Ring</div>
+          </div>
+        </article>
+
+
+        <!-- Capstone -->
+        <article class="post reveal">
+          <div class="post-img glow switchable" data-active="0">
+            <!-- IMAGE 1 -->
+            <div class="switch-img active">
+              <img src="images/blogs/capstone-1.jpg" alt="Capstone project team photo" loading="lazy" />
+            </div>
+
+            <!-- IMAGE 2 -->
+            <div class="switch-img">
+              <img src="images/blogs/capstone-2.png" alt="Capstone project demo" loading="lazy" />
+            </div>
+
+            <div class="switch-controls" aria-label="Capstone photos">
+              <button class="switch-btn active" aria-label="Photo 1"></button>
+              <button class="switch-btn" aria-label="Photo 2"></button>
+
+            </div>
+
+            <span class="badge">Teamwork</span>
+          </div>
+
+          <div class="post-body">
+            <h3>Capstone Launch — ARecipe</h3>
+            <p class="muted">
+              Worked on a year-long capstone project called <strong>ARecipe</strong>.
+              We built an AR-powered app that scans fridge ingredients and generates
+              recipes—designed for students cooking with limited options. A challenging,
+              fun build and a team experience that turned into lifelong friendships.
+            </p>
+            <div class="post-meta">2024 • Capstone Project</div>
+          </div>
+        </article>
+
+        <!-- CONFERENCE -->
+        <article class="post reveal">
+          <div class="post-img glow switchable" data-active="0">
+            <!-- IMAGE 1 -->
+            <div class="switch-img active">
+              <img src="images/blogs/elevate-1.jpg" alt="Elevate Conference photo 1" />
+            </div>
+
+            <!-- IMAGE 2 -->
+            <div class="switch-img">
+              <img src="images/blogs/elevate-2.jpg" alt="Elevate Conference photo 2" />
+            </div>
+
+            <!-- IMAGE 3 -->
+            <div class="switch-img">
+              <img src="images/blogs/elevate-3.jpg" alt="Elevate Conference photo 3" />
+            </div>
+
+            <!-- Controls -->
+            <div class="switch-controls">
+              <button class="switch-btn active" aria-label="Image 1"></button>
+              <button class="switch-btn" aria-label="Image 2"></button>
+              <button class="switch-btn" aria-label="Image 3"></button>
+            </div>
+
+            <span class="badge">Conference</span>
+          </div>
+
+          <div class="post-body">
+            <h3>Elevate Conference</h3>
+            <p class="muted">
+              Connected with builders, explored emerging tech, and learned how startups
+              scale ideas into real products.
+            </p>
+            <div class="post-meta">2025 • Community</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section">
+      <div class="contact-card reveal">
+        <h2>Let’s build something clean.</h2>
+        <p class="muted">
+          Email:
+          <a class="link" href="mailto:you@email.com">ppate2208@gmail.com</a>
+        </p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:ppate2208@gmail.com@email.com">Email me</a>
+          <!-- <a class="btn ghost" href="#">Download Resume</a> -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="container footer">
+      <div class="muted">© <span id="year"></span> Puja Patel</div>
+      <a class="to-top" href="#top" aria-label="Back to top" title="Back to top">
+        ↑
+      </a>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
 </html>
