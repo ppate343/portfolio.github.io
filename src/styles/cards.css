@@ -53,6 +53,14 @@
 .exp-meta { display: flex; flex-direction: column; gap: 6px; }
 .exp-period { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); }
 .exp-company { font-size: 14px; color: var(--muted); }
+.exp-company-link {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-border);
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.exp-company-link:hover { color: var(--accent); border-color: var(--accent); }
 .exp-role { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
 .exp-oneliner { color: var(--muted); font-size: 14.5px; line-height: 1.55; }
 
@@ -73,7 +81,7 @@
 /* Live projects */
 .live-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 22px;
 }
 .live-card {
@@ -90,7 +98,7 @@
   border-radius: 999px;
   font-family: var(--font-mono);
 }
-.live-status.is-live { background: rgba(45, 212, 191, 0.16); color: var(--accent); }
+.live-status.is-live { background: var(--accent-dim); color: var(--accent); }
 .live-status.is-soon { background: rgba(148, 163, 184, 0.16); color: var(--muted); }
 .live-card h3 { font-size: 18px; margin-bottom: 8px; }
 .live-card p { color: var(--muted); font-size: 14.5px; margin-bottom: 18px; }
@@ -108,7 +116,4 @@
 
 @media (max-width: 960px) {
   .project-grid, .live-grid { grid-template-columns: 1fr; }
-}
-@media (min-width: 961px) and (max-width: 1180px) {
-  .live-grid { grid-template-columns: repeat(2, 1fr); }
 }

@@ -25,7 +25,7 @@
       <div class="nav-links" id="navLinks">
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <!-- <a href="#live">Live Projects</a> -->
+        <a href="#live">Live Projects</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a class="pill" href="#contact">Get in touch</a>
@@ -104,7 +104,7 @@
         <article class="exp-item reveal">
           <div class="exp-meta">
             <span class="exp-period">Oct 2024 – Present</span>
-            <span class="exp-company">Tekrata · Brooklyn, NY / Remote</span>
+            <span class="exp-company"><a class="exp-company-link" href="https://tekrata.com" target="_blank" rel="noopener noreferrer">Tekrata</a> · Brooklyn, NY / Remote</span>
           </div>
           <div class="exp-headline">
             <h3 class="exp-role">Technical Product Manager</h3>
@@ -115,7 +115,7 @@
         <article class="exp-item reveal">
           <div class="exp-meta">
             <span class="exp-period">Jan 2026 – Present</span>
-            <span class="exp-company">Qadra (Tekrata) · Remote</span>
+            <span class="exp-company"><a class="exp-company-link" href="https://qadra.io" target="_blank" rel="noopener noreferrer">Qadra</a> (Tekrata) · Remote</span>
           </div>
           <div class="exp-headline">
             <h3 class="exp-role">Lead Engineer &amp; Product Manager</h3>
@@ -126,7 +126,7 @@
         <article class="exp-item reveal">
           <div class="exp-meta">
             <span class="exp-period">May 2024 – Jan 2026</span>
-            <span class="exp-company">Cashly Inc. · Oakville, ON</span>
+            <span class="exp-company"><a class="exp-company-link" href="https://cashlycrm.com/home.html" target="_blank" rel="noopener noreferrer">Cashly Inc.</a> · Oakville, ON</span>
           </div>
           <div class="exp-headline">
             <h3 class="exp-role">Product Manager &amp; Lead Engineer</h3>
@@ -137,7 +137,7 @@
         <article class="exp-item reveal">
           <div class="exp-meta">
             <span class="exp-period">May 2022 – Aug 2023</span>
-            <span class="exp-company">SOTI · Mississauga, ON</span>
+            <span class="exp-company"><a class="exp-company-link" href="https://soti.net/products/soti-mobicontrol/" target="_blank" rel="noopener noreferrer">SOTI</a> · Mississauga, ON</span>
           </div>
           <div class="exp-headline">
             <h3 class="exp-role">Product Owner Intern</h3>
@@ -171,66 +171,42 @@
       </div>
     </section>
 
-    <!--
-    LIVE PROJECTS (hidden for now — re-enable nav link in header too when ready)
+    <!-- LIVE PROJECTS -->
     <section class="section container" id="live">
       <div class="section-head reveal">
         <div class="eyebrow">Live Projects</div>
         <h2>Try it yourself</h2>
-        <p>Live apps and demos you can click into right now. More links coming soon.</p>
+        <p>Cloud-native SaaS platforms I've shipped for past employers — click in and try them live.</p>
       </div>
 
       <div class="live-grid">
         <article class="card live-card reveal">
           <div class="live-card-top">
             <span class="tag">QA Automation</span>
-            <span class="live-status is-soon">Coming soon</span>
+            <span class="live-status is-live">Live</span>
           </div>
           <h3>Qadra</h3>
-          <p>AI-powered QA test automation platform &mdash; rebuilt V1 to V2 architecture, deployed on AWS ECS.</p>
-          <a class="live-link is-disabled" href="#" aria-disabled="true">
+          <p>AI-powered QA test automation platform — rebuilt V1→V2 architecture, deployed on AWS ECS.</p>
+          <a class="live-link" href="https://qadra.io/signup" target="_blank" rel="noopener noreferrer">
             Launch app
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
           </a>
         </article>
 
         <article class="card live-card reveal">
           <div class="live-card-top">
             <span class="tag">Fintech CRM</span>
-            <span class="live-status is-soon">Coming soon</span>
+            <span class="live-status is-live">Live</span>
           </div>
           <h3>Cashly</h3>
-          <p>AI-enabled CRM and workflow platform for mortgage agents &mdash; self-serve onboarding and deal automation.</p>
-          <a class="live-link is-disabled" href="#" aria-disabled="true">
+          <p>AI-enabled CRM and workflow platform for mortgage agents — self-serve onboarding and deal automation.</p>
+          <a class="live-link" href="https://cashlycrm.com/home.html#platform" target="_blank" rel="noopener noreferrer">
             Launch app
-          </a>
-        </article>
-
-        <article class="card live-card reveal">
-          <div class="live-card-top">
-            <span class="tag">Pet Tech</span>
-            <span class="live-status is-soon">Coming soon</span>
-          </div>
-          <h3>PetnerUp</h3>
-          <p>Community-funded pet identification platform &mdash; submit photos and help grow the open dataset.</p>
-          <a class="live-link is-disabled" href="#" aria-disabled="true">
-            Launch app
-          </a>
-        </article>
-
-        <article class="card live-card reveal">
-          <div class="live-card-top">
-            <span class="tag">Healthcare</span>
-            <span class="live-status is-soon">Coming soon</span>
-          </div>
-          <h3>SymptomPrep</h3>
-          <p>Multilingual symptom-preparation tool that turns patient concerns into clinician-ready summaries.</p>
-          <a class="live-link is-disabled" href="#" aria-disabled="true">
-            Launch app
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
           </a>
         </article>
       </div>
     </section>
-    -->
 
     <!-- SKILLS -->
     <section class="section container" id="skills">
@@ -288,21 +264,35 @@
       </div>
 
       <div class="edu-grid">
-        <div class="card edu-card reveal">
-          <img src="/images/education/mcmaster.jpg" alt="McMaster University" />
-          <div>
-            <div class="edu-degree">M.Eng., Entrepreneurship &amp; Innovation</div>
-            <div class="edu-school">McMaster University</div>
-            <span class="edu-period">Expected Dec 2026</span>
+        <div class="card edu-card edu-card-detailed reveal">
+          <div class="edu-card-top">
+            <img src="/images/education/mcmaster.jpg" alt="McMaster University" />
+            <div>
+              <div class="edu-degree">
+                <a class="edu-program-link" href="https://www.eng.mcmaster.ca/sept/degree-options/meei-mtei/" target="_blank" rel="noopener noreferrer">M.Eng., Entrepreneurship &amp; Innovation</a>
+              </div>
+              <div class="edu-school">McMaster University</div>
+              <span class="edu-period">Expected Dec 2026</span>
+            </div>
           </div>
+          <ul class="edu-extras">
+            <li>Community Project Technical Lead — PetnerUp</li>
+          </ul>
         </div>
-        <div class="card edu-card reveal">
-          <img src="/images/education/western.jfif" alt="Western University" />
-          <div>
-            <div class="edu-degree">B.Eng., Software Engineering (Co-op)</div>
-            <div class="edu-school">Western University</div>
-            <span class="edu-period">June 2024</span>
+        <div class="card edu-card edu-card-detailed reveal">
+          <div class="edu-card-top">
+            <img src="/images/education/western.jfif" alt="Western University" />
+            <div>
+              <div class="edu-degree">
+                <a class="edu-program-link" href="https://www.eng.uwo.ca/undergraduate/programs/software.html" target="_blank" rel="noopener noreferrer">B.Eng., Software Engineering (Co-op)</a>
+              </div>
+              <div class="edu-school">Western University</div>
+              <span class="edu-period">June 2024 · GPA 3.2</span>
+            </div>
           </div>
+          <ul class="edu-extras">
+            <li>Hyperloop — VP Communications</li>
+          </ul>
         </div>
       </div>
     </section>
