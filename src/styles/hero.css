@@ -1,0 +1,173 @@
+.hero {
+  padding: 120px 0 96px;
+  position: relative;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-kicker {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-kicker .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-dim);
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5.4vw, 58px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero-cycle {
+  color: var(--accent);
+  display: inline-block;
+  min-width: 1ch;
+}
+
+.hero-sub {
+  margin-top: 22px;
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 540px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14.5px;
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), border-color 0.2s var(--ease);
+  border: 1px solid transparent;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.btn-ghost {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+.btn-ghost:hover { border-color: var(--accent-border); color: var(--accent); }
+
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 36px;
+  margin-top: 56px;
+}
+.metric-num {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--accent);
+  font-family: var(--font-mono);
+}
+.metric-label { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+.hero-visual {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-photo-frame {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  padding: 4px;
+  background: linear-gradient(145deg, var(--accent), var(--accent-2));
+  box-shadow: var(--shadow-lg);
+  transform-style: preserve-3d;
+  transition: transform 0.15s var(--ease);
+  z-index: 2;
+}
+.hero-photo-frame::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: var(--radius-lg);
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, 0.35), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s var(--ease);
+  pointer-events: none;
+  z-index: 1;
+}
+.hero-photo-frame:hover::before { opacity: 1; }
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: calc(var(--radius-lg) - 4px);
+  background: var(--surface-2);
+}
+
+.float-badge {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  z-index: 3;
+  animation: floaty 6s ease-in-out infinite;
+  animation-delay: var(--d, 0s);
+}
+.float-badge-num { font-family: var(--font-mono); font-weight: 700; font-size: 18px; color: var(--accent); }
+.float-badge-label { font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+
+.fb-1 { top: 8%; left: -6%; }
+.fb-2 { bottom: 10%; right: 0; }
+
+.hero-visual { padding-right: 24px; }
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@media (max-width: 900px) {
+  .float-badge { display: none; }
+  .hero-photo-frame { max-width: 320px; }
+}
+.hero-card-dots { display: flex; gap: 6px; margin-bottom: 18px; }
+.hero-card-dots span { width: 10px; height: 10px; border-radius: 50%; background: var(--border); }
+.hero-card-line { color: var(--muted); margin-bottom: 8px; white-space: pre; }
+.hero-card-line .k { color: var(--accent-2); }
+.hero-card-line .v { color: var(--accent); }
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-metrics { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+}

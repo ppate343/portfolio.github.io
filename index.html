@@ -1,48 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Puja Patel</title>
-  <meta name="description" content="Portfolio of Puja Patel — projects, skills, experience, education, and blog." />
+  <title>Puja Patel — Technical Product Manager &amp; Product Engineer</title>
+  <meta name="description" content="Puja Patel — Technical PM and engineer building AI/ML automation tools, cloud-native SaaS platforms, and data integrations across healthcare and fintech." />
 
-  <!-- Favicons that we swap in JS -->
   <link id="favicon" rel="icon" type="image/png" href="/favicon.png" />
-
-
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- Background accents -->
-  <div class="bg-blobs" aria-hidden="true">
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
-    <div class="grid-sheen"></div>
-  </div>
+  <div class="aurora"><span></span><span></span><span></span></div>
 
   <header class="nav-wrap">
     <nav class="nav container">
       <a class="brand" href="#top">
-        <span class="brand-dot"></span>
-        <span>Puja Patel</span>
+        <span class="brand-name-light">Puja</span><span class="brand-name-accent">Patel</span>
       </a>
 
       <div class="nav-links" id="navLinks">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <!-- <a href="#live">Live Projects</a> -->
         <a href="#skills">Skills</a>
-        <!-- <a href="#projects">Projects</a> -->
-        <a href="#roles">Roles</a>
         <a href="#education">Education</a>
-        <a href="#blog">Blog</a>
-        <a class="pill" href="#contact">Contact</a>
+        <a class="pill" href="#contact">Get in touch</a>
       </div>
 
       <div class="nav-actions">
-        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
-          <span class="toggle-icon" aria-hidden="true">☾</span>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark mode">
+          <span id="themeIcon">☾</span>
         </button>
-
         <button class="icon-btn burger" id="burger" aria-label="Open menu">
           <span></span><span></span><span></span>
         </button>
@@ -52,568 +44,298 @@
 
   <main id="top">
     <!-- HERO -->
-    <section id="hero" class="hero container section">
-      <div class="hero-left reveal">
-        <div class="kicker">Design • Product • Cloud • Full-Stack</div>
-        <h1 class="hero-title">Turning ideas into reliable, production-ready products.</h1>
-
-        <p class="hero-sub">
-          I’m <strong>Puja Patel</strong>, a
-          <span class="accent">Product Engineer</span> who supports shipping
-          SaaS products end-to-end, from idea and UI to scalable AWS
-          architectures, CI/CD, and production deployment.
-        </p>
-
-        <div class="hero-cta">
-          <a class="btn primary" href="#roles">View Experience</a>
-          <a class="btn ghost" href="#contact">Get in touch</a>
-        </div>
-
-        <div class="hero-metrics">
-          <div class="metric">
-            <div class="metric-num" data-count="3">0</div>
-            <div class="metric-label">Projects shipped</div>
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <div class="hero-kicker"><span class="dot"></span>Toronto &amp; Calgary · Open to new opportunities</div>
+          <h1>Technical Product Manager<br />&amp; <span class="accent">Product Engineer</span></h1>
+          <p class="hero-sub">
+            Building <span class="hero-cycle" id="heroCycle">AI/ML automation tools</span> across healthcare and fintech —
+            from architecture through deployment, leading engineering teams of up to 4.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="mailto:ppate2208@gmail.com">Email Me</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/ppate343/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/ppate343" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
-          <div class="metric">
-            <div class="metric-num" data-count="4">0</div>
-            <div class="metric-label">Years experience</div>
-          </div>
-          <div class="metric">
-            <div class="metric-num" data-count="2">0</div>
-            <div class="metric-label">Production deployments</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-right reveal">
-        <div class="glass-card">
-          <div class="glass-top">
-            <span class="chip">Now</span>
-            <span class="chip">Open to product & engineering roles</span>
-          </div>
-
-          <div class="glass-body">
-            <div class="avatar">
-              <div class="avatar-ring"></div>
-              <div class="avatar-inner">PP</div>
+          <div class="hero-metrics">
+            <div>
+              <div class="metric-num" data-count="700">0</div>
+              <div class="metric-label">K+ patient records integrated</div>
             </div>
-
-            <ul class="quick">
-              <li>
-                <span class="dot"></span> Full-Stack • React • TypeScript •
-                Next.js
-              </li>
-              <li>
-                <span class="dot"></span> Cloud Engineering • EC2 • TCP/IP •
-                CI/CD
-              </li>
-              <li>
-                <span class="dot"></span> Product Management • Jira •
-                Confluence • Bitbucket
-              </li>
-            </ul>
-
-            <div class="social">
-              <a href="https://github.com/ppate343" aria-label="GitHub" class="social-btn">GitHub</a>
-              <a href="https://www.linkedin.com/in/ppate343/" aria-label="LinkedIn" class="social-btn">LinkedIn</a>
-              <!-- <a href="#" aria-label="Resume" class="social-btn">Resume</a> -->
+            <div>
+              <div class="metric-num" data-count="70">0</div>
+              <div class="metric-label">% manual processes cut</div>
+            </div>
+            <div>
+              <div class="metric-num" data-count="2">0</div>
+              <div class="metric-label">+ yrs leading product &amp; eng</div>
             </div>
           </div>
+        </div>
 
-          <div class="glass-footer">
-            <div class="status"><span class="ping"></span> Online</div>
-            <div class="tiny">GTHA • Toronto • Hybrid/Remote-friendly</div>
+        <div class="hero-visual">
+          <div class="reveal hero-photo-frame" id="tiltCard">
+            <img class="hero-photo" src="/images/headshot.png" alt="Puja Patel" />
+          </div>
+
+          <div class="float-badge fb-1" style="--d:.2s">
+            <span class="float-badge-num">5+</span>
+            <span class="float-badge-label">products shipped</span>
+          </div>
+          <div class="float-badge fb-2" style="--d:1s">
+            <span class="float-badge-num">4</span>
+            <span class="float-badge-label">teams led</span>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section container" id="experience">
+      <div class="section-head reveal">
+        <div class="eyebrow">Experience</div>
+        <h2>Where I've built and shipped</h2>
+        <p>Full-cycle product rebuilds and ML deployments across healthcare, QA automation, and fintech.</p>
+      </div>
+
+      <div class="exp-list">
+        <article class="exp-item reveal">
+          <div class="exp-meta">
+            <span class="exp-period">Oct 2024 – Present</span>
+            <span class="exp-company">Tekrata · Brooklyn, NY / Remote</span>
+          </div>
+          <div class="exp-headline">
+            <h3 class="exp-role">Technical Product Manager</h3>
+            <p class="exp-oneliner">Working with PHI at scale — leading secure healthtech data integrations and claims automation across 800K+ patient records.</p>
+          </div>
+        </article>
+
+        <article class="exp-item reveal">
+          <div class="exp-meta">
+            <span class="exp-period">Jan 2026 – Present</span>
+            <span class="exp-company">Qadra (Tekrata) · Remote</span>
+          </div>
+          <div class="exp-headline">
+            <h3 class="exp-role">Lead Engineer &amp; Product Manager</h3>
+            <p class="exp-oneliner">Led a full-cycle product rebuild from architecture to launch, managing an engineering team of 4.</p>
+          </div>
+        </article>
+
+        <article class="exp-item reveal">
+          <div class="exp-meta">
+            <span class="exp-period">May 2024 – Jan 2026</span>
+            <span class="exp-company">Cashly Inc. · Oakville, ON</span>
+          </div>
+          <div class="exp-headline">
+            <h3 class="exp-role">Product Manager &amp; Lead Engineer</h3>
+            <p class="exp-oneliner">Led a small engineering team building an AI-enabled fintech platform used by mortgage professionals daily.</p>
+          </div>
+        </article>
+
+        <article class="exp-item reveal">
+          <div class="exp-meta">
+            <span class="exp-period">May 2022 – Aug 2023</span>
+            <span class="exp-company">SOTI · Mississauga, ON</span>
+          </div>
+          <div class="exp-headline">
+            <h3 class="exp-role">Product Owner Intern</h3>
+            <p class="exp-oneliner">Partnered with security and engineering teams to triage and reduce a large vulnerability backlog.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SELECTED PROJECTS -->
+    <section class="section container" id="projects">
+      <div class="section-head reveal">
+        <div class="eyebrow">Selected Projects</div>
+        <h2>What I'm building right now</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="card project-card reveal">
+          <span class="project-period">2026 – Present</span>
+          <h3>PetnerUp</h3>
+          <p class="muted" style="margin-top:0;font-size:14px;">Product Strategy &amp; Flutter Development</p>
+          <p>Growing a community-funded pet identification platform to 30 active users and a dataset of several thousand images (user-submitted and open-source), with a go-to-market plan targeting 1,000 users in 3 months.</p>
+        </article>
+
+        <article class="card project-card reveal">
+          <span class="project-period">2026 – Present</span>
+          <h3>SymptomPrep</h3>
+          <p class="muted" style="margin-top:0;font-size:14px;">Healthcare Communication Tool</p>
+          <p>Designing a multilingual symptom-preparation tool that captures patient concerns, transcribes them, and creates clinician-friendly medical summaries for immigrants and older adults.</p>
+        </article>
+      </div>
+    </section>
+
+    <!--
+    LIVE PROJECTS (hidden for now — re-enable nav link in header too when ready)
+    <section class="section container" id="live">
+      <div class="section-head reveal">
+        <div class="eyebrow">Live Projects</div>
+        <h2>Try it yourself</h2>
+        <p>Live apps and demos you can click into right now. More links coming soon.</p>
+      </div>
+
+      <div class="live-grid">
+        <article class="card live-card reveal">
+          <div class="live-card-top">
+            <span class="tag">QA Automation</span>
+            <span class="live-status is-soon">Coming soon</span>
+          </div>
+          <h3>Qadra</h3>
+          <p>AI-powered QA test automation platform &mdash; rebuilt V1 to V2 architecture, deployed on AWS ECS.</p>
+          <a class="live-link is-disabled" href="#" aria-disabled="true">
+            Launch app
+          </a>
+        </article>
+
+        <article class="card live-card reveal">
+          <div class="live-card-top">
+            <span class="tag">Fintech CRM</span>
+            <span class="live-status is-soon">Coming soon</span>
+          </div>
+          <h3>Cashly</h3>
+          <p>AI-enabled CRM and workflow platform for mortgage agents &mdash; self-serve onboarding and deal automation.</p>
+          <a class="live-link is-disabled" href="#" aria-disabled="true">
+            Launch app
+          </a>
+        </article>
+
+        <article class="card live-card reveal">
+          <div class="live-card-top">
+            <span class="tag">Pet Tech</span>
+            <span class="live-status is-soon">Coming soon</span>
+          </div>
+          <h3>PetnerUp</h3>
+          <p>Community-funded pet identification platform &mdash; submit photos and help grow the open dataset.</p>
+          <a class="live-link is-disabled" href="#" aria-disabled="true">
+            Launch app
+          </a>
+        </article>
+
+        <article class="card live-card reveal">
+          <div class="live-card-top">
+            <span class="tag">Healthcare</span>
+            <span class="live-status is-soon">Coming soon</span>
+          </div>
+          <h3>SymptomPrep</h3>
+          <p>Multilingual symptom-preparation tool that turns patient concerns into clinician-ready summaries.</p>
+          <a class="live-link is-disabled" href="#" aria-disabled="true">
+            Launch app
+          </a>
+        </article>
+      </div>
+    </section>
+    -->
 
     <!-- SKILLS -->
-    <section id="skills" class="container section">
+    <section class="section container" id="skills">
       <div class="section-head reveal">
-        <h2>Skills</h2>
-        <!-- <p>
-          End-to-end product delivery, building on AWS, coordinating across
-          teams, and translating technical work for non-technical
-          stakeholders.
-        </p> -->
+        <div class="eyebrow">Skills</div>
+        <h2>Technical &amp; product toolkit</h2>
       </div>
 
-      <div class="skills-shell reveal">
-        <!-- LEFT: chart + description -->
-        <div class="skills-left">
-          <div class="donut" id="skillsDonut" role="img" aria-label="Skill technologies">
-            <svg class="donut-svg" viewBox="0 0 120 120" aria-hidden="true">
-              <g id="donutSegs"></g>
-            </svg>
-            <div class="donut-center">
-              <strong id="skillsTitle"></strong>
-              <small class="muted"></small>
-            </div>
-            <div class="donut-tip" id="donutTip" role="status" aria-live="polite"></div>
+      <div class="marquee reveal">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <img src="/images/skills/react.png" alt="React" /><img src="/images/skills/node.png" alt="Node.js" />
+            <img src="/images/skills/python.png" alt="Python" /><img src="/images/skills/postgres.png" alt="PostgreSQL" />
+            <img src="/images/skills/ec2.png" alt="AWS" /><img src="/images/skills/sql.png" alt="SQL" />
+            <img src="/images/skills/git.png" alt="Git" /><img src="/images/skills/openai.jpg" alt="AI" />
+            <img src="/images/skills/jira.png" alt="Jira" /><img src="/images/skills/figma.png" alt="Figma" />
           </div>
-
-          <div class="skills-icons" id="skillsIcons" aria-label="Technologies"></div>
-
-          <p class="skills-desc muted" id="skillsDesc">
-            Building scalable UI and backend features with React, TypeScript,
-            and modern web patterns.
-          </p>
-        </div>
-        <div class="skills-right" role="list" aria-label="Skill categories">
-          <!-- RIGHT: selectable skill list -->
-          <button class="skill-pill is-active" type="button" data-title="Full Stack"
-            data-desc="Built and shipped production apps like gocashly.io—a Next.js full-stack CRM using Supabase APIs—and CopayAssist, a React application hosted on CloudFront."
-            data-icons="React,Next,Node.js,TypeScript,REST,NPM" data-weights="60,40">
-            Full Stack
-          </button>
-
-          <button class="skill-pill" type="button" data-title="AWS Architecture" data-pct="85"
-            data-desc="Designed multiple AWS architectures, including hosting GoCashly.io on EC2 with ALB routing via Route53 (HTTP→HTTPS) inside a private VPC, and Qadra.io on ECS using ECR-backed images behind an ALB."
-            data-icons="EC2,ALB/VPC,ECS,Docker,CloudWatch,R53,ACM,IAM,Linux,AWS," data-weights="30,40,30">
-            AWS Architecture
-          </button>
-
-          <button class="skill-pill" type="button" data-title="CI/CD & Delivery" data-pct="88"
-            data-desc="Implemented CI/CD pipelines for Cashly.io using GitHub to AWS via SSM Agent, and Bitbucket-based pipelines deploying to S3 and CloudFront using AWS credentials."
-            data-icons=" Git,Bitbucket,CI/CD," data-weights="50,50">
-            CI/CD & Delivery
-          </button>
-
-          <button class="skill-pill" type="button" data-title="Application Security" data-pct="80"
-            data-desc="Owned security hardening across deployed applications, managing post-pentest vulnerability backlogs, dependency remediation, and enforcing TLS, ALB routing, ACM certificates, and WAF protections."
-            data-icons="IAM,ACM,WAF,NPM,AWS," data-weights="50,50">
-            Application Security
-          </button>
-
-          <button class="skill-pill" type="button" data-title="Product Execution" data-pct="78"
-            data-desc="Led product execution across multiple products by managing Jira boards and sprint workflows, writing design docs in Confluence, and maintaining Bitbucket repositories from planning to release."
-            data-icons="Jira,Confluence,Bitbucket" data-weights="40,20,40">
-            Product Execution
-          </button>
-
-          <button class="skill-pill" type="button" data-title="Design & Content" data-pct="70"
-            data-desc="Designed UI assets, logos, and product visuals, and created demo videos and tutorials to support onboarding and adoption across multiple shipped products."
-            data-icons="Figma,Capcut,Artlist.io,Canva">
-            Design & Content
-          </button>
+          <div class="marquee-group" aria-hidden="true">
+            <img src="/images/skills/react.png" alt="" /><img src="/images/skills/node.png" alt="" />
+            <img src="/images/skills/python.png" alt="" /><img src="/images/skills/postgres.png" alt="" />
+            <img src="/images/skills/ec2.png" alt="" /><img src="/images/skills/sql.png" alt="" />
+            <img src="/images/skills/git.png" alt="" /><img src="/images/skills/openai.jpg" alt="" />
+            <img src="/images/skills/jira.png" alt="" /><img src="/images/skills/figma.png" alt="" />
+          </div>
         </div>
       </div>
 
-      <div class="skills-soft reveal">
-        <h3 class="skills-soft-title">Ways I work</h3>
-        <div class="soft-grid">
-          <div class="soft-item">
-            <div class="soft-kicker">Communication</div>
-            <div class="muted">
-              Translate technical decisions into clear client-friendly
-              tradeoffs.
-            </div>
-          </div>
-          <div class="soft-item">
-            <div class="soft-kicker">Collaboration</div>
-            <div class="muted">
-              Partner across teams to unblock work and ship smoothly.
-            </div>
-          </div>
-          <div class="soft-item">
-            <div class="soft-kicker">Execution</div>
-            <div class="muted">
-              Manage multiple priorities, keep Jira clean, and deliver
-              reliably.
-            </div>
-          </div>
-          <div class="soft-item">
-            <div class="soft-kicker">Ownership</div>
-            <div class="muted">
-              From discovery to deployment, drive outcomes, not just tickets.
-            </div>
+      <div class="skills-cols">
+        <div class="skills-col reveal">
+          <h3>Technical</h3>
+          <div class="skills-pills">
+            <span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span><span>Prisma</span>
+            <span>Python</span><span>SQL</span><span>PostgreSQL</span><span>Docker</span>
+            <span>AWS ECS</span><span>AWS ALB</span><span>AWS EC2</span><span>AWS Bedrock</span><span>AWS S3</span>
+            <span>CI/CD</span><span>System Architecture</span><span>REST APIs</span><span>AI/LLM Integrations</span>
+            <span>OCR</span><span>Flutter/Dart</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <!-- <section id="projects" class="container section">
-      <div class="section-head reveal">
-        <h2>Personal Projects</h2>
-
-      </div>
-
-      <div class="cards-grid">
-        <article class="card reveal">
-          <div class="card-top">
-            <span class="tag">Featured</span>
-            <span class="tag ghost">Web App</span>
-          </div>
-          <h3>Project One</h3>
-          <p class="muted">
-            A short description of what it does, who it’s for, and the impact.
-          </p>
-          <div class="card-actions">
-            <a class="link" href="#">Live</a>
-            <a class="link" href="#">Code</a>
-          </div>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-top">
-            <span class="tag">UI</span>
-            <span class="tag ghost">Animation</span>
-          </div>
-          <h3>Project Two</h3>
-          <p class="muted">
-            Explain the tech and highlight what makes it impressive.
-          </p>
-          <div class="card-actions">
-            <a class="link" href="#">Live</a>
-            <a class="link" href="#">Code</a>
-          </div>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-top">
-            <span class="tag">Tool</span>
-            <span class="tag ghost">Open Source</span>
-          </div>
-          <h3>Project Three</h3>
-          <p class="muted">
-            Small tool, huge value — mention speed, UX, or results.
-          </p>
-          <div class="card-actions">
-            <a class="link" href="#">Live</a>
-            <a class="link" href="#">Code</a>
-          </div>
-        </article>
-      </div>
-    </section> -->
-
-    <!-- ROLES / EXPERIENCE -->
-    <section id="roles" class="container section">
-      <div class="section-head reveal">
-        <h2>Roles</h2>
-      </div>
-
-      <div class="timeline">
-        <div class="t-item reveal">
-          <div class="t-dot"></div>
-          <div class="t-content">
-            <div class="t-top">
-              <h3>
-                <a href="https://qadra.io" target="_blank" rel="noopener noreferrer" class="role-link">
-                  Qadra </a>/ Engineering — Technical PM
-              </h3>
-              <span class="t-time">Jan 2026 — Present</span>
-            </div>
-            <ul>
-              <li>
-                Defined and coordinated the AWS production launch plan for
-                Qadra.io using ECS/ECR and Jira.
-              </li>
-              <li>
-                Supported a distributed engineering team to unblock deployment
-                issues and hit a tight deadline.
-              </li>
-              <li>
-                Shipped UI updates and demo assets to support a successful
-                product launch.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="t-item reveal">
-          <div class="t-dot"></div>
-          <div class="t-content">
-            <div class="t-top">
-              <h3>
-                <a href="https://gocashly.io" target="_blank" rel="noopener noreferrer" class="role-link">
-                  Cashly
-                </a>
-                / Engineering — AWS Cloud Engineer · Full Stack Developer · PM
-              </h3>
-              <span class="t-time">May 2024 — Jan 2026</span>
-            </div>
-            <ul>
-              <li>
-                Designed and built the Cashly CRM from the ground up, leading
-                full-stack development with Supabase, custom APIs, and a
-                production AWS architecture.
-              </li>
-              <li>
-                Implemented CI/CD pipelines that reduced manual deployments
-                from ~3 hours to ~2 minutes.
-              </li>
-              <li>
-                Led engineering execution by running scrum meetings, guiding
-                three developers, and serving as the primary technical point
-                of contact.
-              </li>
-              <li>
-                Drove the product from initial concept to daily use by ~10
-                agents at the brokerage.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="t-item reveal">
-          <div class="t-dot"></div>
-          <div class="t-content">
-            <div class="t-top">
-              <h3>
-                <a href="https://tekrata.com" target="_blank" rel="noopener noreferrer" class="role-link">
-                  Tekrata </a>/ Engineering — Technical PM
-              </h3>
-              <span class="t-time">Dec 2024 — March 2026</span>
-            </div>
-            <ul>
-              <li>
-                Managed Jira boards and sprint execution for Copay programs
-                (e.g., Xolair), increasing delivery throughput by ~50% through
-                improved planning and prioritization.
-              </li>
-              <li>
-                Led delivery of the PDV project by serving as the single point
-                of contact for API and data issues, coordinating with
-                developers, database engineers, business analysts, and
-                stakeholders to enable enrollment and claims data integration
-                with Genentech.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="t-item reveal">
-          <div class="t-dot"></div>
-          <div class="t-content">
-            <div class="t-top">
-              <h3>
-                <a href="https://soti.net/products/soti-mobicontrol/" target="_blank" rel="noopener noreferrer"
-                  class="role-link">
-                  SOTI
-                </a>
-                / MobiControl — Product Owner Intern
-              </h3>
-              <span class="t-time">May 2022 — Aug 2023</span>
-            </div>
-            <ul>
-              <li>
-                Researched and evaluated Digital Adoption Platforms (DAP) to
-                support product onboarding strategy.
-              </li>
-              <li>
-                Managed the security vulnerability backlog and developed a
-                two-year remediation plan to address identified risks.
-              </li>
-            </ul>
+        <div class="skills-col reveal">
+          <h3>Product &amp; Process</h3>
+          <div class="skills-pills">
+            <span>Agile</span><span>Jira</span><span>Bitbucket</span><span>Sprint Planning</span>
+            <span>Stakeholder Management</span><span>Cross-functional Team Leadership</span>
+            <span>Product Delivery</span><span>Roadmapping</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- EDUCATION -->
-    <section id="education" class="container section">
+    <section class="section container" id="education">
       <div class="section-head reveal">
-        <h2>Education</h2>
+        <div class="eyebrow">Education</div>
+        <h2>Background</h2>
       </div>
 
       <div class="edu-grid">
-        <div class="edu-card reveal">
-          <div class="edu-head">
-            <img src="images/education/mcmaster.jpg" alt="McMaster University logo" class="edu-logo" loading="lazy" />
-            <div class="edu-text">
-              <h3>McMaster University</h3>
-              <div class="muted" style="font-weight:700; margin-top:2px;">
-                W Booth School of Engineering Practice & Technology
-              </div>
-              <div class="edu-meta">
-                MEng, Engineering Entrepreneurship & Innovation •
-                <span class="edu-dates">Jan 2026 – Dec 2026 (Expected)</span>
-              </div>
-            </div>
+        <div class="card edu-card reveal">
+          <img src="/images/education/mcmaster.jpg" alt="McMaster University" />
+          <div>
+            <div class="edu-degree">M.Eng., Entrepreneurship &amp; Innovation</div>
+            <div class="edu-school">McMaster University</div>
+            <span class="edu-period">Expected Dec 2026</span>
           </div>
-          <p class="muted">Focus on design, innovation, and technology commercialization.</p>
         </div>
-
-        <div class="edu-card reveal">
-          <div class="edu-head">
-            <img src="images/education/western.jfif" alt="University of Western Ontario logo" class="edu-logo"
-              loading="lazy" />
-            <div class="edu-text">
-              <h3>University of Western Ontario</h3>
-              <div class="muted" style="font-weight:700; margin-top:2px;">
-                Faculty of Engineering
-              </div>
-              <div class="edu-meta">
-                BEng, Software Engineering •
-                <span class="edu-dates">2019 – 2024</span>
-              </div>
-            </div>
+        <div class="card edu-card reveal">
+          <img src="/images/education/western.jfif" alt="Western University" />
+          <div>
+            <div class="edu-degree">B.Eng., Software Engineering (Co-op)</div>
+            <div class="edu-school">Western University</div>
+            <span class="edu-period">June 2024</span>
           </div>
-          <p class="muted">Western Hyperloop (VP Communications), WesternU Hackathon.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- BLOG / GALLERY -->
-    <section id="blog" class="container section">
-      <div class="section-head reveal">
-        <h2>Beyond the Code</h2>
-        <p>Milestones, team moments, and life beyond work.</p>
-
-      </div>
-
-      <div class="masonry">
-        <!-- TALK / CEREMONY (SWITCHABLE - 5 images) -->
-        <article class="post reveal">
-          <div class="post-img glow switchable" data-active="0">
-            <!-- IMAGE 1 -->
-            <div class="switch-img active">
-              <img src="images/blogs/ring-1.jpg" alt="Engineering Ring Ceremony photo 1" loading="lazy" />
-            </div>
-
-            <!-- IMAGE 2 -->
-            <div class="switch-img">
-              <img src="images/blogs/ring-2.jpg" alt="Engineering Ring Ceremony photo 2" loading="lazy" />
-            </div>
-
-            <!-- IMAGE 3 -->
-            <div class="switch-img">
-              <img src="images/blogs/ring-3.jpg" alt="Engineering Ring Ceremony photo 3" loading="lazy" />
-            </div>
-
-            <!-- IMAGE 4 -->
-            <div class="switch-img">
-              <img src="images/blogs/ring-4.jpg" alt="Engineering Ring Ceremony photo 4" loading="lazy" />
-            </div>
-
-            <!-- IMAGE 5 -->
-            <div class="switch-img">
-              <img src="images/blogs/ring-5.jpg" alt="Engineering Ring Ceremony photo 5" loading="lazy" />
-            </div>
-
-            <div class="switch-controls" aria-label="Ring ceremony photos">
-              <button class="switch-btn active" aria-label="Photo 1"></button>
-              <button class="switch-btn" aria-label="Photo 2"></button>
-              <button class="switch-btn" aria-label="Photo 3"></button>
-              <button class="switch-btn" aria-label="Photo 4"></button>
-              <button class="switch-btn" aria-label="Photo 5"></button>
-            </div>
-
-            <span class="badge">Milestone</span>
-          </div>
-
-          <div class="post-body">
-            <h3>Engineering Ring Ceremony</h3>
-            <p class="muted">
-              Received my Iron Ring at the 2024 Ring Ceremony (Call of an Engineer). A reminder of responsibility—and a
-              proud moment shared with my capstone team.
-            </p>
-            <div class="post-meta">2024 • Iron Ring</div>
-          </div>
-        </article>
-
-
-        <!-- Capstone -->
-        <article class="post reveal">
-          <div class="post-img glow switchable" data-active="0">
-            <!-- IMAGE 1 -->
-            <div class="switch-img active">
-              <img src="images/blogs/capstone-1.jpg" alt="Capstone project team photo" loading="lazy" />
-            </div>
-
-            <!-- IMAGE 2 -->
-            <div class="switch-img">
-              <img src="images/blogs/capstone-2.png" alt="Capstone project demo" loading="lazy" />
-            </div>
-
-            <div class="switch-controls" aria-label="Capstone photos">
-              <button class="switch-btn active" aria-label="Photo 1"></button>
-              <button class="switch-btn" aria-label="Photo 2"></button>
-
-            </div>
-
-            <span class="badge">Teamwork</span>
-          </div>
-
-          <div class="post-body">
-            <h3>Capstone Launch — ARecipe</h3>
-            <p class="muted">
-              Worked on a year-long capstone project called <strong>ARecipe</strong>.
-              We built an AR-powered app that scans fridge ingredients and generates
-              recipes—designed for students cooking with limited options. A challenging,
-              fun build and a team experience that turned into lifelong friendships.
-            </p>
-            <div class="post-meta">2024 • Capstone Project</div>
-          </div>
-        </article>
-
-        <!-- CONFERENCE -->
-        <article class="post reveal">
-          <div class="post-img glow switchable" data-active="0">
-            <!-- IMAGE 1 -->
-            <div class="switch-img active">
-              <img src="images/blogs/elevate-1.jpg" alt="Elevate Conference photo 1" />
-            </div>
-
-            <!-- IMAGE 2 -->
-            <div class="switch-img">
-              <img src="images/blogs/elevate-2.jpg" alt="Elevate Conference photo 2" />
-            </div>
-
-            <!-- IMAGE 3 -->
-            <div class="switch-img">
-              <img src="images/blogs/elevate-3.jpg" alt="Elevate Conference photo 3" />
-            </div>
-
-            <!-- Controls -->
-            <div class="switch-controls">
-              <button class="switch-btn active" aria-label="Image 1"></button>
-              <button class="switch-btn" aria-label="Image 2"></button>
-              <button class="switch-btn" aria-label="Image 3"></button>
-            </div>
-
-            <span class="badge">Conference</span>
-          </div>
-
-          <div class="post-body">
-            <h3>Elevate Conference</h3>
-            <p class="muted">
-              Connected with builders, explored emerging tech, and learned how startups
-              scale ideas into real products.
-            </p>
-            <div class="post-meta">2025 • Community</div>
-          </div>
-        </article>
-
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="container section">
-      <div class="contact-card reveal">
-        <h2>Let’s build something clean.</h2>
-        <p class="muted">
-          Email:
-          <a class="link" href="mailto:you@email.com">ppate2208@gmail.com</a>
-        </p>
-        <div class="contact-actions">
-          <a class="btn primary" href="mailto:ppate2208@gmail.com@email.com">Email me</a>
-          <!-- <a class="btn ghost" href="#">Download Resume</a> -->
+    <section class="section container" id="contact">
+      <div class="contact-box reveal">
+        <h2>Let's build something.</h2>
+        <p>Open to technical PM, product engineering, and consulting opportunities in Toronto, Calgary, and remote.</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:ppate2208@gmail.com">ppate2208@gmail.com</a>
+          <a class="btn btn-ghost" href="tel:+16476152280">(647) 615-2280</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ppate343/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/ppate343" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </section>
 
-    <footer class="container footer">
-      <div class="muted">© <span id="year"></span> Puja Patel</div>
-      <a class="to-top" href="#top" aria-label="Back to top" title="Back to top">
-        ↑
-      </a>
+    <footer class="footer">
+      <div class="footer-brand">
+        <span>Puja</span><span>Patel</span>
+      </div>
+      <div class="footer-copy">© <span id="year"></span> Puja Patel. All rights reserved.</div>
+      <div class="footer-social">
+        <a href="https://github.com/ppate343" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/ppate343/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+      </div>
     </footer>
   </main>
 
-  <script src="app.js"></script>
+  <a class="to-top" href="#top" aria-label="Back to top">↑</a>
+
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
